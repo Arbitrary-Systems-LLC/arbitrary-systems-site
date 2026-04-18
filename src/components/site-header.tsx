@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -11,8 +12,9 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link href="/" className="wordmark">
-          Arbitrary Systems
+        <Link href="/" className="wordmark wordmark-group" aria-label="Arbitrary Systems home">
+          <Image src="/branding/asio-128.png" alt="Arbitrary Systems" width={44} height={44} className="wordmark-logo" priority />
+          <span>Arbitrary Systems</span>
         </Link>
         <nav className="site-nav" aria-label="Primary navigation">
           {navItems.map((item) => (

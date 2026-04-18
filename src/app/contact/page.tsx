@@ -15,7 +15,10 @@ export default function ContactPage() {
           <div className="panel">
             <h2 className="section-heading">Get in touch</h2>
             <p>
-              A dedicated contact workflow can be wired in next. For now, this page is the placeholder surface for company inquiries, product questions, and support routing.
+              For company inquiries, product questions, or support-related communication, please reach out using the channel below while a fuller form workflow is prepared.
+            </p>
+            <p>
+              <a href="mailto:hello@arbitrarysystems.io" className="inline-link">hello@arbitrarysystems.io</a>
             </p>
             <ul className="detail-list">
               <li>General company inquiry</li>

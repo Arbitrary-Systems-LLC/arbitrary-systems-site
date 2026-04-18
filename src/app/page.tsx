@@ -4,19 +4,27 @@ export default function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="container">
-          <div className="eyebrow">Arbitrary Systems</div>
-          <h1>Refined systems, thoughtfully built.</h1>
-          <p>
-            Arbitrary Systems is a software company developing products for detail-driven domains, with a focus on luxury collections and wellness businesses.
-          </p>
-          <div className="button-row">
-            <Link href="/contact" className="button primary">
-              Contact
-            </Link>
-            <Link href="/products" className="button">
-              View Products
-            </Link>
+        <div className="container hero-grid">
+          <div>
+            <div className="eyebrow">Arbitrary Systems</div>
+            <h1>Refined systems, thoughtfully built.</h1>
+            <p>
+              Arbitrary Systems is a software company developing products for detail-driven domains, with a focus on luxury collections and wellness businesses.
+            </p>
+            <div className="button-row">
+              <Link href="/contact" className="button primary">
+                Contact
+              </Link>
+              <Link href="/products" className="button">
+                View Products
+              </Link>
+            </div>
+          </div>
+          <div className="hero-aside panel">
+            <div className="eyebrow">Current focus</div>
+            <p>
+              The company is currently developing two prototype products, The Arbitrary Register and PranaLogic, each guided by the same preference for clarity, restraint, and dependable execution.
+            </p>
           </div>
         </div>
       </section>
@@ -36,8 +44,8 @@ export default function HomePage() {
       <section>
         <div className="container">
           <h2 className="section-heading">Current product work</h2>
-          <p className="section-intro">
-            Arbitrary Systems is currently developing two prototype products, each shaped by the same design philosophy and each focused on a distinct operational domain.
+          <p className="section-intro narrow-copy">
+            Two prototype products currently define the company&apos;s public direction, one focused on collections, the other on wellness operations.
           </p>
           <div className="card-grid">
             <article className="card">

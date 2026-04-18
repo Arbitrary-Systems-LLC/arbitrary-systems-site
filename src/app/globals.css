@@ -29,9 +29,20 @@ a {
   text-decoration: none;
 }
 
+.inline-link {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: rgba(216, 199, 160, 0.45);
+  text-underline-offset: 3px;
+}
+
 p {
   color: var(--muted);
   line-height: 1.75;
+}
+
+main {
+  display: block;
 }
 
 .site-shell {
@@ -41,6 +52,19 @@ p {
 .container {
   width: min(var(--max-width), calc(100% - 48px));
   margin: 0 auto;
+}
+
+.wordmark-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wordmark-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(216, 199, 160, 0.08));
 }
 
 .site-header {
@@ -82,6 +106,13 @@ p {
 .footer-links a {
   color: var(--muted);
   font-size: 0.95rem;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.site-nav a:hover,
+.footer-links a:hover,
+.wordmark:hover {
+  color: var(--foreground);
 }
 
 section {
@@ -90,6 +121,17 @@ section {
 
 .hero {
   padding-top: 128px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  gap: 32px;
+  align-items: end;
+}
+
+.hero-aside {
+  align-self: stretch;
 }
 
 .eyebrow {
@@ -116,6 +158,10 @@ section {
   font-size: 1.15rem;
 }
 
+.narrow-copy {
+  max-width: 620px;
+}
+
 .button-row {
   display: flex;
   gap: 16px;
@@ -138,6 +184,15 @@ section {
 .button.primary {
   background: var(--accent-soft);
   border-color: rgba(216, 199, 160, 0.38);
+}
+
+.button:hover {
+  border-color: rgba(216, 199, 160, 0.4);
+  background: rgba(255,255,255,0.02);
+}
+
+.button.primary:hover {
+  background: rgba(216, 199, 160, 0.22);
 }
 
 .section-heading {
@@ -218,9 +273,19 @@ ul.detail-list {
   margin-top: 40px;
 }
 
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .footer-copy {
   margin: 10px 0 0;
   font-size: 0.95rem;
+}
+
+.footer-links {
+  justify-content: flex-end;
 }
 
 @media (max-width: 720px) {
@@ -229,6 +294,19 @@ ul.detail-list {
     flex-direction: column;
     align-items: flex-start;
     padding: 18px 0;
+  }
+
+  .site-nav,
+  .footer-links {
+    gap: 16px;
+  }
+
+  .wordmark-group {
+    gap: 12px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 
   section {
