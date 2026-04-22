@@ -54,6 +54,9 @@ export type Product = {
   eyebrow: string;
   audience: string;
   status: string;
+  logoIconSrc?: string;
+  logoIconWidth?: number;
+  logoIconHeight?: number;
   logoSrc: string;
   logoAlt: string;
   logoWidth: number;
@@ -99,6 +102,9 @@ export const products: Record<"register" | "pranalogic", Product> = {
     eyebrow: "Studio operating system",
     audience: "Yoga studios and boutique fitness businesses managing classes, staff, customers, and one or more locations.",
     status: "Prototype in development",
+    logoIconSrc: "/products/pranalogic-mark.png",
+    logoIconWidth: 1920,
+    logoIconHeight: 1920,
     logoSrc: "/products/pranalogic-wordmark.svg",
     logoAlt: "PranaLogic wordmark",
     logoWidth: 560,

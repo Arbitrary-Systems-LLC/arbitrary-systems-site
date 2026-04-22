@@ -407,6 +407,13 @@ ul.detail-list li::marker {
   margin-bottom: 18px;
 }
 
+.product-logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+}
+
 .product-logo {
   display: block;
   width: auto;
@@ -414,12 +421,19 @@ ul.detail-list li::marker {
   max-width: 100%;
 }
 
+.product-logo-icon {
+  display: block;
+  width: 58px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
 .product-logo-mark {
   width: min(132px, 42%);
 }
 
 .product-logo-wordmark {
-  width: min(220px, 78%);
+  width: min(220px, 100%);
 }
 
 .status-pill {
@@ -534,12 +548,20 @@ ul.detail-list li::marker {
     margin-bottom: 14px;
   }
 
+  .product-logo-lockup {
+    gap: 10px;
+  }
+
+  .product-logo-icon {
+    width: 44px;
+  }
+
   .product-logo-mark {
     width: min(112px, 34%);
   }
 
   .product-logo-wordmark {
-    width: min(180px, 72%);
+    width: min(180px, 100%);
   }
 
   section {
