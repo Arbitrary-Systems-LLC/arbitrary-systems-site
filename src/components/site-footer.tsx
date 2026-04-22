@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { company } from "@/lib/content";
 
 const footerLinks = [
   { href: "/products", label: "Products" },
@@ -12,13 +13,14 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
-        <div>
-          <div className="footer-brand">
-            <Image src="/branding/asio-128.png" alt="Arbitrary Systems" width={40} height={40} className="wordmark-logo" />
-            <div>
-              <div className="footer-wordmark">Arbitrary Systems</div>
-              <p className="footer-copy">Refined systems, thoughtfully built.</p>
-            </div>
+        <div className="footer-brand">
+          <Image src="/branding/logo-mark.jpg" alt="Arbitrary Systems logo" width={54} height={54} className="footer-logo" />
+          <div>
+            <div className="footer-wordmark">{company.name}</div>
+            <p className="footer-copy">{company.tagline}</p>
+            <a href={`mailto:${company.email}`} className="inline-link footer-email">
+              {company.email}
+            </a>
           </div>
         </div>
         <div className="footer-links">

@@ -13,8 +13,18 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="wordmark wordmark-group" aria-label="Arbitrary Systems home">
-          <Image src="/branding/asio-128.png" alt="Arbitrary Systems" width={68} height={68} className="wordmark-logo" priority />
-          <span>Arbitrary Systems</span>
+          <Image
+            src="/branding/logo-mark.jpg"
+            alt="Arbitrary Systems logo"
+            width={60}
+            height={60}
+            className="wordmark-logo"
+            priority
+          />
+          <span className="wordmark-copy">
+            <strong>Arbitrary Systems</strong>
+            <small>Quiet software for exacting work.</small>
+          </span>
         </Link>
         <nav className="site-nav" aria-label="Primary navigation">
           {navItems.map((item) => (
