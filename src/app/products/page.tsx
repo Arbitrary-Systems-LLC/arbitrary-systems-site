@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Products",
   description:
-    "See the current Arbitrary Systems product portfolio, including The Arbitrary Register and PranaLogic.",
+    "See the current Arbitrary Systems product portfolio, including The Arbitrary Register for collectors and PranaLogic for studio operations.",
   path: "/products",
 });
 
@@ -15,9 +15,9 @@ export default function ProductsPage() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Product portfolio</div>
-          <h1>Products shaped around high-detail operating realities.</h1>
+          <h1>Two focused products, each built around a real operating system.</h1>
           <p>
-            Arbitrary Systems is currently developing two product directions. Each one reflects the same broader interest in software that is composed, reliable, and genuinely suited to the people using it.
+            Arbitrary Systems is currently developing two products. One is for serious collectors managing private inventories. The other is for studios managing schedules, people, bookings, and service operations.
           </p>
         </div>
       </section>

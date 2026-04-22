@@ -17,9 +17,10 @@ export const metadata: Metadata = {
   keywords: [
     "Arbitrary Systems",
     "software company",
-    "luxury collections software",
-    "wellness software",
-    "product design",
+    "collector software",
+    "inventory software",
+    "studio management software",
+    "yoga studio software",
     "operations software",
   ],
   authors: [{ name: company.name }],

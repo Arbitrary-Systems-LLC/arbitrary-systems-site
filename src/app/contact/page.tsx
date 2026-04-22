@@ -8,11 +8,11 @@ export const metadata = createMetadata({
 });
 
 const inquiryTopics = [
-  "General company inquiry",
-  "The Arbitrary Register",
-  "PranaLogic",
-  "Partnership or collaboration",
-  "Support-related question",
+  "Which product or company topic your note relates to",
+  "Whether you are a collector, studio operator, collaborator, or something else",
+  "The workflow, problem, or opportunity you want to discuss",
+  "Any current tools or constraints that matter",
+  "Your timeline or stage, if relevant",
 ];
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
           <div className="eyebrow">Contact</div>
           <h1>Start a conversation.</h1>
           <p>
-            For company inquiries, product questions, collaboration ideas, or early customer conversations, please get in touch by email.
+            For product questions, early customer conversations, collaboration ideas, or general company inquiries, please get in touch by email.
           </p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 .
               </p>
               <p>
-                If your note relates to a specific product, mention it in the subject line so the conversation starts in the right place.
+                If your note relates to The Arbitrary Register or PranaLogic, mention the product in the subject line so the conversation starts in the right place.
               </p>
             </div>
             <div className="panel">

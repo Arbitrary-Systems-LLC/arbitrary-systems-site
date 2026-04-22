@@ -5,14 +5,14 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds composed software for detail-driven businesses, with current product work in luxury collections and wellness operations.",
+    "Arbitrary Systems builds focused software products for serious collectors and studio operators, with current work in The Arbitrary Register and PranaLogic.",
   path: "/",
 });
 
 const signals = [
-  "Luxury collections and collection-centered operations",
-  "Yoga studios and wellness businesses",
-  "Interfaces built for discretion, legibility, and trust",
+  "Collector software for wine, spirits, beer, and cigars",
+  "Studio operations software for yoga and boutique fitness",
+  "Calm interfaces shaped around trust, records, and daily use",
 ];
 
 export default function HomePage() {
@@ -22,12 +22,12 @@ export default function HomePage() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <div className="eyebrow">Arbitrary Systems</div>
-            <h1>Quiet software for businesses where precision matters.</h1>
+            <h1>Focused software for collectors and studios.</h1>
             <p className="hero-intro">
-              We design composed systems for detail-heavy operations, with current product work focused on luxury collections and wellness businesses.
+              We build products around specific operating realities, with current work focused on collector-grade inventory software and studio management for yoga businesses.
             </p>
             <p className="hero-secondary">
-              The aim is simple: software that feels clear, reliable, and unusually well considered from the first screen to the everyday workflow behind it.
+              The aim is practical: strong underlying models, calmer interfaces, and software that feels trustworthy once it becomes part of the weekly routine.
             </p>
             <div className="button-row">
               <Link href="/products" className="button primary">
@@ -65,15 +65,15 @@ export default function HomePage() {
         <div className="container signal-grid">
           <div className="signal-card">
             <span className="signal-label">Positioning</span>
-            <p>Product-minded software company with a restrained aesthetic and a high-trust operational focus.</p>
+            <p>Product company building software around real workflows instead of generic admin templates.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>Two product directions: one for collection stewardship, one for wellness operations.</p>
+            <p>The Arbitrary Register for collectors, and PranaLogic for studio scheduling and customer operations.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
-            <p>Clarity, discretion, and dependable execution over feature noise and unnecessary complexity.</p>
+            <p>Clear records, calm interfaces, and dependable execution over feature noise and unnecessary complexity.</p>
           </div>
         </div>
       </section>
@@ -82,9 +82,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">What we build toward</div>
-            <h2 className="section-heading">A more composed kind of business software.</h2>
+            <h2 className="section-heading">Software that understands the work underneath it.</h2>
             <p className="section-intro">
-              Arbitrary Systems is shaped around the belief that software can feel premium, legible, and calm without becoming vague or ornamental. The work favors durable systems that help operators see clearly and act confidently.
+              Arbitrary Systems is less interested in generic SaaS than in products that honestly model the job: collection stewardship on one side, studio operations on the other. The work favors durable systems that stay clear as the detail level rises.
             </p>
           </div>
           <div className="card-grid">
@@ -102,9 +102,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">Current product work</div>
-            <h2 className="section-heading">Two product directions, one consistent point of view.</h2>
+            <h2 className="section-heading">Two products, each rooted in a real operating environment.</h2>
             <p className="section-intro narrow-copy">
-              Each product is being developed for a domain where operational detail matters, but where the surrounding software often feels clumsy, noisy, or insufficiently thoughtful.
+              Each product grows from an active codebase and a concrete domain model, not just a concept. One centers on serious collections. The other centers on the daily mechanics of running a studio well.
             </p>
           </div>
           <div className="product-grid">
@@ -132,7 +132,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">How we work</div>
-            <h2 className="section-heading">Software with a steadier temperament.</h2>
+            <h2 className="section-heading">A steadier way to build product.</h2>
           </div>
           <div className="principles-grid">
             {principles.map((principle) => (
@@ -149,9 +149,9 @@ export default function HomePage() {
         <div className="container cta-band">
           <div>
             <div className="eyebrow">Get in touch</div>
-            <h2 className="section-heading">If the direction resonates, we should talk.</h2>
+            <h2 className="section-heading">If you are close to either domain, we should talk.</h2>
             <p className="section-intro narrow-copy">
-              {company.name} maintains this site as a company presence, product overview, and contact point for future customers, collaborators, and early conversations.
+              {company.name} maintains this site as a company presence and contact point for collectors, studio operators, collaborators, and other early product conversations.
             </p>
           </div>
           <div className="button-row">

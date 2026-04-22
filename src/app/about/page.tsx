@@ -4,14 +4,14 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "About",
   description:
-    "Learn about Arbitrary Systems, a software company building composed products for luxury collections and wellness businesses.",
+    "Learn about Arbitrary Systems, a software company building focused products for collectors and studio operators.",
   path: "/about",
 });
 
 const differentiators = [
-  "Product direction shaped by specific operating realities rather than generic software patterns.",
-  "A preference for measured, polished interfaces over crowded administrative surfaces.",
-  "Systems designed to earn trust through consistency, legibility, and careful defaults.",
+  "Products shaped by concrete roles, records, and workflows instead of abstract SaaS conventions.",
+  "A preference for calm, legible interfaces that still preserve operational depth.",
+  "Careful treatment of private, high-trust data in both collector and customer-facing contexts.",
 ];
 
 export default function AboutPage() {
@@ -20,9 +20,9 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">About</div>
-          <h1>Arbitrary Systems builds software with a quieter, more deliberate point of view.</h1>
+          <h1>Arbitrary Systems builds focused software with a calm, deliberate point of view.</h1>
           <p>
-            {company.name} is a software company focused on products for businesses where experience, trust, and operational detail need to coexist without friction.
+            {company.name} is a software company building products for domains where operational detail matters and the software should feel clearer than the work it is helping organize.
           </p>
         </div>
       </section>
@@ -32,10 +32,10 @@ export default function AboutPage() {
             <article className="panel">
               <h2 className="section-heading">The company</h2>
               <p>
-                The work is guided by a preference for strong structure, restrained design, and practical utility. Rather than treating software as a vehicle for constant novelty, Arbitrary Systems approaches product development as an exercise in composition, reliability, and long-term usefulness.
+                The work is guided by a preference for strong operational models, restrained design, and practical utility. Rather than chasing novelty for its own sake, Arbitrary Systems approaches product development as a long-term exercise in clarity, reliability, and fit.
               </p>
               <p>
-                Current product work includes The Arbitrary Register for collection-centered operations and PranaLogic for yoga and wellness businesses.
+                Current product work includes The Arbitrary Register, a collector-first system for wine, spirits, beer, and cigars, and PranaLogic, a studio operating system for yoga and boutique fitness businesses.
               </p>
             </article>
             <article className="panel">

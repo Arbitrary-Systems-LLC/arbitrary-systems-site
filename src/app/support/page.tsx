@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Support",
-  description: "Company-level support information for Arbitrary Systems products and inquiries.",
+  description: "Support information for Arbitrary Systems products, including The Arbitrary Register and PranaLogic.",
   path: "/support",
 });
 
@@ -16,7 +16,7 @@ export default function SupportPage() {
           <div className="eyebrow">Support</div>
           <h1>Support and service inquiries.</h1>
           <p>
-            This page serves as a company-level contact point for product support, service questions, and other operational issues related to Arbitrary Systems work.
+            This page serves as the company-level contact point for product support, service questions, and other operational issues related to The Arbitrary Register and PranaLogic.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function SupportPage() {
                   {company.email}
                 </a>
                 {" "}
-                and include the product name, a short description of the issue, and any useful environment details.
+                and include the product name, the workflow you were in, a short description of the issue, and any useful environment details.
               </p>
             </div>
             <div className="panel">
@@ -46,8 +46,8 @@ export default function SupportPage() {
             <h2 className="section-heading">Before you send a note</h2>
             <ul className="detail-list">
               <li>Indicate whether the message concerns The Arbitrary Register, PranaLogic, or a general company matter.</li>
-              <li>Summarize the issue, question, or request as directly as possible.</li>
-              <li>Include screenshots or reproduction details when relevant.</li>
+              <li>Describe the exact issue, question, or request as directly as possible.</li>
+              <li>Include screenshots, reproduction steps, and account or studio context when relevant.</li>
             </ul>
             <div className="button-row">
               <Link href="/contact" className="button primary">
