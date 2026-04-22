@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { capabilities, company, featuredProducts, principles } from "@/lib/content";
+import { ProductLogo } from "@/components/product-logo";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
@@ -110,6 +111,7 @@ export default function HomePage() {
           <div className="product-grid">
             {featuredProducts.map((product) => (
               <article key={product.slug} className="product-card">
+                <ProductLogo product={product} />
                 <div className="product-card-top">
                   <span className="status-pill">{product.status}</span>
                   <span className="product-eyebrow">{product.eyebrow}</span>

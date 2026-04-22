@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { products } from "@/lib/content";
+import { ProductLogo } from "@/components/product-logo";
 import { createMetadata } from "@/lib/metadata";
 
 const product = products.pranalogic;
@@ -15,6 +16,7 @@ export default function PranaLogicPage() {
     <>
       <section className="page-hero">
         <div className="container">
+          <ProductLogo product={product} priority />
           <div className="eyebrow">{product.eyebrow}</div>
           <h1>{product.name}</h1>
           <p>{product.description}</p>

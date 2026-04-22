@@ -351,18 +351,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  padding: 4px 4px 0;
 }
 
 .hero-mark {
-  width: min(100%, 400px);
+  width: min(100%, 240px);
   height: auto;
-  border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: 0.88;
 }
 
 .hero-panel-copy {
-  padding-top: 8px;
+  padding-top: 0;
 }
 
 .signal-list,
@@ -397,8 +396,30 @@ ul.detail-list li::marker {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   flex-wrap: wrap;
+}
+
+.product-logo-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 68px;
+  margin-bottom: 18px;
+}
+
+.product-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.product-logo-mark {
+  width: min(132px, 42%);
+}
+
+.product-logo-wordmark {
+  width: min(220px, 78%);
 }
 
 .status-pill {
@@ -473,6 +494,10 @@ ul.detail-list li::marker {
     padding-right: 0;
   }
 
+  .hero-mark {
+    width: min(100%, 200px);
+  }
+
   .cta-band {
     align-items: start;
   }
@@ -498,6 +523,23 @@ ul.detail-list li::marker {
   .wordmark-logo {
     width: 52px;
     height: 52px;
+  }
+
+  .hero-mark-wrap {
+    display: none;
+  }
+
+  .product-logo-wrap {
+    min-height: auto;
+    margin-bottom: 14px;
+  }
+
+  .product-logo-mark {
+    width: min(112px, 34%);
+  }
+
+  .product-logo-wordmark {
+    width: min(180px, 72%);
   }
 
   section {

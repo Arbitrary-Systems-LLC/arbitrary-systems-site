@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-label="PranaLogic">
+  <defs>
+    <linearGradient id="pranalogicWordmarkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8F00FF" />
+      <stop offset="100%" stop-color="#38B6FF" />
+    </linearGradient>
+  </defs>
+  <text
+    x="0"
+    y="95"
+    text-anchor="start"
+    font-size="110"
+    font-weight="600"
+    letter-spacing="-2"
+    textLength="560"
+    lengthAdjust="spacingAndGlyphs"
+    fill="url(#pranalogicWordmarkGradient)"
+    font-family="Avenir Next, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+  >
+    PranaLogic
+  </text>
+</svg>

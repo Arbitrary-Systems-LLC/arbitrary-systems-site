@@ -54,6 +54,11 @@ export type Product = {
   eyebrow: string;
   audience: string;
   status: string;
+  logoSrc: string;
+  logoAlt: string;
+  logoWidth: number;
+  logoHeight: number;
+  logoStyle: "mark" | "wordmark";
   description: string;
   overview: string;
   direction: string;
@@ -68,6 +73,11 @@ export const products: Record<"register" | "pranalogic", Product> = {
     eyebrow: "Collector system",
     audience: "Private collectors and households managing wine, spirits, beer, and cigar collections.",
     status: "Prototype in development",
+    logoSrc: "/products/arbitrary-register-logo.webp",
+    logoAlt: "The Arbitrary Register monogram",
+    logoWidth: 480,
+    logoHeight: 480,
+    logoStyle: "mark",
     description:
       "A collector-first system for wine, spirits, beer, and cigars, designed to keep inventory, storage, pricing, and purchase history in one calm, trustworthy place.",
     overview:
@@ -89,6 +99,11 @@ export const products: Record<"register" | "pranalogic", Product> = {
     eyebrow: "Studio operating system",
     audience: "Yoga studios and boutique fitness businesses managing classes, staff, customers, and one or more locations.",
     status: "Prototype in development",
+    logoSrc: "/products/pranalogic-wordmark.svg",
+    logoAlt: "PranaLogic wordmark",
+    logoWidth: 560,
+    logoHeight: 120,
+    logoStyle: "wordmark",
     description:
       "A studio management system built around scheduling, booking, waivers, waitlists, customer records, and payments, with simplicity and reliability leading the product direction.",
     overview:
