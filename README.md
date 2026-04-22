@@ -42,7 +42,7 @@ npm run check
 
 ## Brand assets
 
-- Primary website logo: `public/branding/logo-mark.jpg`
+- Primary website logo: `public/branding/logo-mark.png`
 - App and browser icons: `public/icon.png`, `public/apple-icon.png`
 
 ## Deployment routine

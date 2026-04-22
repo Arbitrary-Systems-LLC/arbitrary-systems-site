@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="hero-panel panel">
             <div className="hero-mark-wrap">
               <Image
-                src="/branding/logo-mark.jpg"
+                src="/branding/logo-mark.png"
                 alt="Arbitrary Systems brand mark"
                 width={440}
                 height={451}

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/branding/logo-mark.jpg",
+        url: "/branding/logo-mark.png",
         alt: `${company.name} brand mark`,
       },
     ],
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: company.name,
     description: company.description,
-    images: ["/branding/logo-mark.jpg"],
+    images: ["/branding/logo-mark.png"],
   },
 };
 
@@ -61,7 +61,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: company.name,
   url: company.domain,
-  logo: `${company.domain}/branding/logo-mark.jpg`,
+  logo: `${company.domain}/branding/logo-mark.png`,
   email: company.email,
   description: company.description,
 };

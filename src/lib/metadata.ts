@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { company } from "@/lib/content";
 
 export const siteUrl = new URL(company.domain);
-export const defaultOgImage = "/branding/logo-mark.jpg";
+export const defaultOgImage = "/branding/logo-mark.png";
 
 type PageMetadataInput = {
   title?: string;

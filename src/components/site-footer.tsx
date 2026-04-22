@@ -14,7 +14,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <Image src="/branding/logo-mark.jpg" alt="Arbitrary Systems logo" width={54} height={54} className="footer-logo" />
+          <Image src="/branding/logo-mark.png" alt="Arbitrary Systems logo" width={54} height={54} className="footer-logo" />
           <div>
             <div className="footer-wordmark">{company.name}</div>
             <p className="footer-copy">{company.tagline}</p>

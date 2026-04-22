@@ -14,7 +14,7 @@ export function SiteHeader() {
       <div className="container header-inner">
         <Link href="/" className="wordmark wordmark-group" aria-label="Arbitrary Systems home">
           <Image
-            src="/branding/logo-mark.jpg"
+            src="/branding/logo-mark.png"
             alt="Arbitrary Systems logo"
             width={60}
             height={60}
