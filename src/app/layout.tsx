@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "inventory software",
     "studio management software",
     "yoga studio software",
+    "private social planning app",
+    "social coordination app",
     "operations software",
   ],
   authors: [{ name: company.name }],

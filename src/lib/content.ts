@@ -2,16 +2,16 @@ export const company = {
   name: "Arbitrary Systems",
   domain: "https://arbitrarysystems.io",
   email: "hello@arbitrarysystems.io",
-  tagline: "Focused software for collectors and studios.",
+  tagline: "Focused software for collectors, studios, and real-world plans.",
   description:
-    "Arbitrary Systems builds calm, precise software for serious collectors and studio operators, with current product work in The Arbitrary Register and PranaLogic.",
+    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, and private social coordination, with current product work in The Arbitrary Register, PranaLogic, and I'm Open To.",
 };
 
 export const capabilities = [
   {
     title: "Software shaped by real workflows",
     description:
-      "The products start from concrete operating realities like collection records, storage locations, bookings, waivers, staff roles, and balances instead of generic SaaS patterns.",
+      "The products start from concrete operating realities like collection records, storage locations, bookings, waivers, staff roles, circle privacy, and availability windows instead of generic SaaS patterns.",
   },
   {
     title: "Calm surfaces with real depth",
@@ -29,17 +29,17 @@ export const principles = [
   {
     title: "Model the work honestly",
     description:
-      "Good software should reflect the real structure of the job, whether that means bottle state and storage context or waitlists, waivers, and class credits.",
+      "Good software should reflect the real structure of the job, whether that means bottle state and storage context, waitlists and waivers, or the social shape of making plans with trusted people.",
   },
   {
     title: "Keep private details private",
     description:
-      "High-trust products need clear boundaries around what belongs to the shared system and what should remain personal, local, or operator-only.",
+      "High-trust products need clear boundaries around what belongs to the shared system and what should remain personal, local, circle-scoped, or operator-only.",
   },
   {
-    title: "Reduce operator drag",
+    title: "Reduce routine friction",
     description:
-      "The products should remove friction from routine work so that collectors and studio teams spend less time fighting the software around the task.",
+      "The products should remove friction from routine work and coordination so that collectors, studio teams, and everyday users spend less time fighting the software around the task.",
   },
   {
     title: "Prefer reliability over theater",
@@ -69,7 +69,9 @@ export type Product = {
   bullets: string[];
 };
 
-export const products: Record<"register" | "pranalogic", Product> = {
+export type ProductKey = "register" | "pranalogic" | "imopento";
+
+export const products: Record<ProductKey, Product> = {
   register: {
     name: "The Arbitrary Register",
     slug: "the-arbitrary-register",
@@ -125,6 +127,32 @@ export const products: Record<"register" | "pranalogic", Product> = {
       "a calmer alternative to cluttered studio software without sacrificing operational seriousness",
     ],
   },
+  imopento: {
+    name: "I'm Open To",
+    slug: "imopento",
+    eyebrow: "Private social planning",
+    audience: "People making low-pressure real-world plans with trusted circles of friends, family, or community.",
+    status: "Prototype in development",
+    logoSrc: "/products/imopento-logo.png",
+    logoAlt: "I'm Open To logo",
+    logoWidth: 512,
+    logoHeight: 512,
+    logoStyle: "mark",
+    description:
+      "A private, circle-based social planning app for turning \"I'm open to...\" into small real-world plans without public feeds, invitation pressure, or noisy group chats.",
+    overview:
+      "I'm Open To is being developed for people who want a calmer way to signal openness to seeing friends, sharing a meal, going out, or making other small plans without broadcasting themselves to everyone they know.",
+    direction:
+      "Its direction centers on private circles, expiring beacons, anonymous declines, and poster-controlled follow-through so interest can surface without leaking attention metadata or forcing the app to behave like a social feed.",
+    promise:
+      "The goal is to make real-world coordination feel more human, more private, and less socially exhausting.",
+    bullets: [
+      "private, invite-only circles with no public feeds or visible engagement theater",
+      "beacon-based planning that starts with \"I'm open to...\" and lets useful overlap surface quietly",
+      "anonymous declines and invisible silence so users are not pressured to perform responsiveness",
+      "poster-controlled conversion from early interest into an actual plan, with trust and locality leading the design",
+    ],
+  },
 };
 
-export const featuredProducts = [products.register, products.pranalogic];
+export const featuredProducts = [products.register, products.pranalogic, products.imopento];

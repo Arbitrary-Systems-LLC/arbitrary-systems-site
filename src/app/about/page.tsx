@@ -4,14 +4,14 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "About",
   description:
-    "Learn about Arbitrary Systems, a software company building focused products for collectors and studio operators.",
+    "Learn about Arbitrary Systems, a software company building focused products for collectors, studio operators, and private social coordination.",
   path: "/about",
 });
 
 const differentiators = [
   "Products shaped by concrete roles, records, and workflows instead of abstract SaaS conventions.",
   "A preference for calm, legible interfaces that still preserve operational depth.",
-  "Careful treatment of private, high-trust data in both collector and customer-facing contexts.",
+  "Careful treatment of private, high-trust data in collector, operational, and social contexts.",
 ];
 
 export default function AboutPage() {
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 The work is guided by a preference for strong operational models, restrained design, and practical utility. Rather than chasing novelty for its own sake, Arbitrary Systems approaches product development as a long-term exercise in clarity, reliability, and fit.
               </p>
               <p>
-                Current product work includes The Arbitrary Register, a collector-first system for wine, spirits, beer, and cigars, and PranaLogic, a studio operating system for yoga and boutique fitness businesses.
+                Current product work includes The Arbitrary Register, a collector-first system for wine, spirits, beer, and cigars, PranaLogic, a studio operating system for yoga and boutique fitness businesses, and I&apos;m Open To, a private social planning app for small real-world plans.
               </p>
             </article>
             <article className="panel">
