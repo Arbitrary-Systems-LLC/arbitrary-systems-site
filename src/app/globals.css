@@ -487,6 +487,10 @@ ul.detail-list li::marker {
   border: 1px solid rgba(213, 216, 209, 0.08);
 }
 
+.logo-preview:hover {
+  border-color: rgba(217, 198, 160, 0.28);
+}
+
 .logo-preview-mark {
   background:
     radial-gradient(circle at top, rgba(217, 198, 160, 0.08), transparent 38%),
@@ -522,6 +526,10 @@ ul.detail-list li::marker {
   font-size: 0.8rem;
   color: var(--muted-strong);
   word-break: break-all;
+}
+
+.logo-actions {
+  margin-top: 20px;
 }
 
 .cta-band {
