@@ -327,6 +327,11 @@ section {
   padding: 28px;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card h3,
 .principle h3,
 .panel h3,
@@ -402,9 +407,9 @@ ul.detail-list li::marker {
 
 .product-logo-wrap {
   display: flex;
-  align-items: center;
-  min-height: 68px;
-  margin-bottom: 18px;
+  align-items: flex-start;
+  min-height: 136px;
+  margin-bottom: 20px;
 }
 
 .product-logo-lockup {
@@ -429,11 +434,16 @@ ul.detail-list li::marker {
 }
 
 .product-logo-mark {
-  width: min(132px, 42%);
+  width: clamp(104px, 34%, 132px);
 }
 
 .product-logo-wordmark {
-  width: min(220px, 100%);
+  width: min(232px, 100%);
+}
+
+.product-card .button-row {
+  margin-top: auto;
+  padding-top: 28px;
 }
 
 .status-pill {
@@ -611,7 +621,7 @@ ul.detail-list li::marker {
   }
 
   .product-logo-wrap {
-    min-height: auto;
+    min-height: 112px;
     margin-bottom: 14px;
   }
 
@@ -624,11 +634,11 @@ ul.detail-list li::marker {
   }
 
   .product-logo-mark {
-    width: min(112px, 34%);
+    width: clamp(92px, 30%, 112px);
   }
 
   .product-logo-wordmark {
-    width: min(180px, 100%);
+    width: min(198px, 100%);
   }
 
   section {
