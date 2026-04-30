@@ -446,6 +446,35 @@ ul.detail-list li::marker {
   padding-top: 28px;
 }
 
+.product-card-imopen2 {
+  border-color: rgba(0, 245, 255, 0.18);
+  background:
+    radial-gradient(circle at top, rgba(0, 245, 255, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(11, 27, 34, 0.96), rgba(8, 18, 24, 0.9));
+}
+
+.product-card-imopen2 .product-eyebrow {
+  color: #9ffcff;
+}
+
+.product-card-imopen2 .status-pill,
+.page-stack-imopen2 .status-pill {
+  border-color: rgba(0, 245, 255, 0.3);
+  color: #9ffcff;
+  background: rgba(0, 43, 54, 0.44);
+}
+
+.product-card-imopen2 .button.primary,
+.page-stack-imopen2 .button.primary {
+  background: linear-gradient(135deg, rgba(0, 232, 252, 0.28), rgba(0, 124, 137, 0.2));
+  border-color: rgba(0, 245, 255, 0.34);
+}
+
+.product-card-imopen2 .button.primary:hover,
+.page-stack-imopen2 .button.primary:hover {
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.34), rgba(0, 124, 137, 0.24));
+}
+
 .status-pill {
   display: inline-block;
   padding: 10px 16px;
@@ -467,12 +496,25 @@ ul.detail-list li::marker {
   padding-top: 0;
 }
 
+.page-hero-imopen2 {
+  background:
+    radial-gradient(circle at top left, rgba(0, 245, 255, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(0, 124, 137, 0.16), transparent 28%);
+}
+
 .page-stack {
   gap: 24px;
 }
 
 .split-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-stack-imopen2 .panel {
+  border-color: rgba(0, 245, 255, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(0, 245, 255, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(18, 31, 38, 0.94), rgba(11, 20, 26, 0.84));
 }
 
 .logo-library-grid {

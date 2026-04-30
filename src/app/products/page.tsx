@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Products",
   description:
-    "See the current Arbitrary Systems product portfolio, including The Arbitrary Register, PranaLogic, and I'm Open To.",
+    "See the current Arbitrary Systems product portfolio, including The Arbitrary Register, PranaLogic, and I'm open 2.",
   path: "/products",
 });
 
@@ -26,7 +26,7 @@ export default function ProductsPage() {
         <div className="container page-stack">
           <div className="product-grid">
             {featuredProducts.map((product) => (
-              <article key={product.slug} className="product-card">
+              <article key={product.slug} className={`product-card product-card-${product.slug}`}>
                 <ProductLogo product={product} />
                 <div className="product-card-top">
                   <span className="status-pill">{product.status}</span>

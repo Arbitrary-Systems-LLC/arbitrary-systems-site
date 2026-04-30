@@ -22,6 +22,8 @@ export const metadata: Metadata = {
     "studio management software",
     "yoga studio software",
     "private social planning app",
+    "pulse planning app",
+    "circle-based planning app",
     "social coordination app",
     "operations software",
   ],

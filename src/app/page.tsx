@@ -6,14 +6,14 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds focused software products for serious collectors, studio operators, and private social planning, with current work in The Arbitrary Register, PranaLogic, and I'm Open To.",
+    "Arbitrary Systems builds focused software products for serious collectors, studio operators, and private social planning, with current work in The Arbitrary Register, PranaLogic, and I'm open 2.",
   path: "/",
 });
 
 const signals = [
   "Collector software for wine, spirits, beer, and cigars",
   "Studio operations software for yoga and boutique fitness",
-  "Private, circle-based social planning for small real-world plans",
+  "Private, circle-based pulses and syncs for small real-world plans",
 ];
 
 export default function HomePage() {
@@ -70,7 +70,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>The Arbitrary Register for collectors, PranaLogic for studio operations, and I&apos;m Open To for private social coordination.</p>
+            <p>The Arbitrary Register for collectors, PranaLogic for studio operations, and I&apos;m open 2 for private, low-pressure coordination.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -110,7 +110,7 @@ export default function HomePage() {
           </div>
           <div className="product-grid">
             {featuredProducts.map((product) => (
-              <article key={product.slug} className="product-card">
+              <article key={product.slug} className={`product-card product-card-${product.slug}`}>
                 <ProductLogo product={product} />
                 <div className="product-card-top">
                   <span className="status-pill">{product.status}</span>

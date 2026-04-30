@@ -4,7 +4,7 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Focused software for collectors, studios, and real-world plans.",
   description:
-    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, and private social coordination, with current product work in The Arbitrary Register, PranaLogic, and I'm Open To.",
+    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, and private social coordination, with current product work in The Arbitrary Register, PranaLogic, and I'm open 2.",
 };
 
 export const capabilities = [
@@ -69,7 +69,7 @@ export type Product = {
   bullets: string[];
 };
 
-export type ProductKey = "register" | "pranalogic" | "imopento";
+export type ProductKey = "register" | "pranalogic" | "imopen2";
 
 export const products: Record<ProductKey, Product> = {
   register: {
@@ -127,32 +127,33 @@ export const products: Record<ProductKey, Product> = {
       "a calmer alternative to cluttered studio software without sacrificing operational seriousness",
     ],
   },
-  imopento: {
-    name: "I'm Open To",
-    slug: "imopento",
-    eyebrow: "Private social planning",
+  imopen2: {
+    name: "I'm open 2",
+    slug: "imopen2",
+    eyebrow: "Private pulse planning",
     audience: "People making low-pressure real-world plans with trusted circles of friends, family, or community.",
     status: "Prototype in development",
-    logoSrc: "/products/imopento-logo.png",
-    logoAlt: "I'm Open To logo",
-    logoWidth: 512,
-    logoHeight: 512,
+    logoSrc: "/products/imopen2-logo.png",
+    logoAlt: "I'm open 2 logo",
+    logoWidth: 2082,
+    logoHeight: 2082,
     logoStyle: "mark",
     description:
-      "A private, circle-based social planning app for turning \"I'm open to...\" into small real-world plans without public feeds, invitation pressure, or noisy group chats.",
+      "A private, circle-based planning app built around pulses, responses, and syncs, helping people turn small real-world openness into actual plans without public feeds or noisy group chats.",
     overview:
-      "I'm Open To is being developed for people who want a calmer way to signal openness to seeing friends, sharing a meal, going out, or making other small plans without broadcasting themselves to everyone they know.",
+      "I'm open 2 is being developed for people who want a calmer way to signal they are open 2 dinner, a drink, a game, or some other small plan without broadcasting themselves to everyone they know.",
     direction:
-      "Its direction centers on private circles, expiring beacons, anonymous declines, and poster-controlled follow-through so interest can surface without leaking attention metadata or forcing the app to behave like a social feed.",
+      "Its direction centers on private circles, expiring pulses, named positive response, silent privacy, and poster-controlled sync creation so interest can surface without leaking attention metadata or forcing the app to behave like a social feed.",
     promise:
       "The goal is to make real-world coordination feel more human, more private, and less socially exhausting.",
     bullets: [
       "private, invite-only circles with no public feeds or visible engagement theater",
-      "beacon-based planning that starts with \"I'm open to...\" and lets useful overlap surface quietly",
-      "anonymous declines and invisible silence so users are not pressured to perform responsiveness",
-      "poster-controlled conversion from early interest into an actual plan, with trust and locality leading the design",
+      "pulse-based planning that starts with a small moment of openness and lets useful overlap surface quietly",
+      "an \"I'm open 2\" response language and a Sync step that turns interest into an actual plan",
+      "silent privacy around delivery, declines, and attention so users are not pressured to perform responsiveness",
+      "poster-controlled coordination with trust, locality, and low social pressure leading the design",
     ],
   },
 };
 
-export const featuredProducts = [products.register, products.pranalogic, products.imopento];
+export const featuredProducts = [products.register, products.pranalogic, products.imopen2];

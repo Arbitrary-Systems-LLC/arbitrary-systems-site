@@ -41,7 +41,7 @@ export default function ContactPage() {
                 .
               </p>
               <p>
-                If your note relates to The Arbitrary Register, PranaLogic, or I&apos;m Open To, mention the product in the subject line so the conversation starts in the right place.
+                If your note relates to The Arbitrary Register, PranaLogic, or I&apos;m open 2, mention the product in the subject line so the conversation starts in the right place.
               </p>
             </div>
             <div className="panel">
