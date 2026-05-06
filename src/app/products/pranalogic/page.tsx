@@ -47,8 +47,11 @@ export default function PranaLogicPage() {
           <div className="panel">
             <span className="status-pill">{product.status}</span>
             <div className="button-row">
-              <Link href="/contact" className="button primary">
-                Ask About PranaLogic
+              <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
+                Visit Beta
+              </a>
+              <Link href="/contact" className="button">
+                Contact
               </Link>
             </div>
           </div>

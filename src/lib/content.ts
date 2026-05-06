@@ -4,7 +4,7 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Focused software for collectors, studios, tastings, and real-world plans.",
   description:
-    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, tasters, and private social coordination, with current product work in The Registry, PranaLogic, I'm open 2, and Group Pours.",
+    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, tasters, and private social coordination, with beta products in The Registry, PranaLogic, I'm open 2, and Group Pours.",
 };
 
 export const capabilities = [
@@ -54,6 +54,7 @@ export type Product = {
   eyebrow: string;
   audience: string;
   status: string;
+  appUrl: string;
   logoIconSrc?: string;
   logoIconWidth?: number;
   logoIconHeight?: number;
@@ -77,7 +78,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "the-registry",
     eyebrow: "Collector system",
     audience: "Private collectors and households managing wine, spirits, beer, and cigar collections.",
-    status: "Prototype in development",
+    status: "Beta",
+    appUrl: "https://www.the-registry.net",
     logoSrc: "/products/the-registry-logo.png",
     logoAlt: "The Registry crest",
     logoWidth: 1024,
@@ -86,7 +88,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "A collector-first system for wine, spirits, beer, and cigars, designed to keep inventory, storage, pricing, and purchase history in one calm, trustworthy place.",
     overview:
-      "The Registry is being developed for people who maintain serious collections and want better control over what they own, where it lives, what it cost, and how it changes over time.",
+      "The Registry is now in beta for people who maintain serious collections and want better control over what they own, where it lives, what it cost, and how it changes over time.",
     direction:
       "Its direction is shaped by real collector needs: fast capture, category-specific depth, precise storage records, and a shared catalog model that improves discovery without exposing private ownership details.",
     promise:
@@ -103,7 +105,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "pranalogic",
     eyebrow: "Studio operating system",
     audience: "Yoga studios and boutique fitness businesses managing classes, staff, customers, and one or more locations.",
-    status: "Prototype in development",
+    status: "Beta",
+    appUrl: "https://www.prana-logic.com",
     logoIconSrc: "/products/pranalogic-mark.png",
     logoIconWidth: 1920,
     logoIconHeight: 1920,
@@ -115,7 +118,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "A studio management system built around scheduling, booking, waivers, waitlists, customer records, and payments, with simplicity and reliability leading the product direction.",
     overview:
-      "PranaLogic is being developed for yoga studios that need dependable day-to-day operations across classes, teachers, front-desk staff, customers, rooms, and locations.",
+      "PranaLogic is now in beta for yoga studios that need dependable day-to-day operations across classes, teachers, front-desk staff, customers, rooms, and locations.",
     direction:
       "Its direction centers on the operational backbone of the studio: schedule management, booking and cancellation rules, waitlists, waivers, customer accounts, and billing-related workflows.",
     promise:
@@ -132,7 +135,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "imopen2",
     eyebrow: "Private pulse planning",
     audience: "People making low-pressure real-world plans with trusted circles of friends, family, or community.",
-    status: "Prototype in development",
+    status: "Beta",
+    appUrl: "https://www.imopen2.com",
     logoSrc: "/products/imopen2-logo.png",
     logoAlt: "I'm open 2 logo",
     logoWidth: 2082,
@@ -141,7 +145,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "A private, circle-based planning app built around pulses, responses, and syncs, helping people turn small real-world openness into actual plans without public feeds or noisy group chats.",
     overview:
-      "I'm open 2 is being developed for people who want a calmer way to signal they are open 2 dinner, a drink, a game, or some other small plan without broadcasting themselves to everyone they know.",
+      "I'm open 2 is now in beta for people who want a calmer way to signal they are open 2 dinner, a drink, a game, or some other small plan without broadcasting themselves to everyone they know.",
     direction:
       "Its direction centers on private circles, expiring pulses, named positive response, silent privacy, and poster-controlled sync creation so interest can surface without leaking attention metadata or forcing the app to behave like a social feed.",
     promise:
@@ -159,7 +163,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "group-pours",
     eyebrow: "Collaborative tasting",
     audience: "Hosts and tasters running guided, blind, or social wine tastings together.",
-    status: "Prototype in development",
+    status: "Beta",
+    appUrl: "https://www.grouppours.com",
     logoSrc: "/products/group-pours-wordmark.png",
     logoAlt: "Group Pours wordmark",
     logoWidth: 720,
@@ -168,7 +173,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "A collaborative wine tasting app built around GPAT, helping hosts run structured tastings while tasters join by code, record notes, and contribute to live shared results.",
     overview:
-      "Group Pours is being developed for tasting hosts who want a cleaner way to run one or more wines, optionally keep bottles blind, and gather everyone into the same tasting flow without paper chaos.",
+      "Group Pours is now in beta for tasting hosts who want a cleaner way to run one or more wines, optionally keep bottles blind, and gather everyone into the same tasting flow without paper chaos.",
     direction:
       "Its direction centers on host-led tasting sessions, share codes and QR joins, GPAT-driven note capture, blind tasting support, and live aggregate views that get more useful as the room fills in responses.",
     promise:

@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds focused software products for serious collectors, studio operators, tasters, and private social planning, with current work in The Registry, PranaLogic, I'm open 2, and Group Pours.",
+    "Arbitrary Systems builds focused software products for serious collectors, studio operators, tasters, and private social planning, with beta products in The Registry, PranaLogic, I'm open 2, and Group Pours.",
   path: "/",
 });
 
@@ -26,7 +26,7 @@ export default function HomePage() {
             <div className="eyebrow">Arbitrary Systems</div>
             <h1>Focused software for real-world detail.</h1>
             <p className="hero-intro">
-              We build products around specific operating realities, with current work spanning collector-grade inventory, studio operations, collaborative tastings, and private social planning.
+              We build products around specific operating realities, with current beta work spanning collector-grade inventory, studio operations, collaborative tastings, and private social planning.
             </p>
             <p className="hero-secondary">
               The aim is practical: strong underlying models, calmer interfaces, and software that feels trustworthy once it becomes part of the weekly routine.
@@ -71,7 +71,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>The Registry for collectors, PranaLogic for studio operations, Group Pours for collaborative tastings, and I&apos;m open 2 for private coordination.</p>
+            <p>Four beta products: The Registry, PranaLogic, Group Pours, and I&apos;m open 2.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -106,7 +106,7 @@ export default function HomePage() {
             <div className="eyebrow">Current product work</div>
             <h2 className="section-heading">Four products, each rooted in a real operating environment.</h2>
             <p className="section-intro narrow-copy">
-              Each product grows from an active codebase and a concrete domain model, not just a concept. One centers on serious collections. One centers on the daily mechanics of running a studio well. One centers on collaborative tasting sessions. One centers on private, low-pressure coordination between trusted people.
+              Each product grows from an active codebase and a concrete domain model, not just a concept, and all four are now available in beta. One centers on serious collections. One centers on the daily mechanics of running a studio well. One centers on collaborative tasting sessions. One centers on private, low-pressure coordination between trusted people.
             </p>
           </div>
           <div className="product-grid">
@@ -124,6 +124,9 @@ export default function HomePage() {
                   <Link href={`/products/${product.slug}`} className="button primary">
                     Learn More
                   </Link>
+                  <a href={product.appUrl} className="button" target="_blank" rel="noreferrer">
+                    Visit Beta
+                  </a>
                 </div>
               </article>
             ))}
