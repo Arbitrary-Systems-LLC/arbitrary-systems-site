@@ -386,9 +386,13 @@ ul.detail-list li::marker {
 
 .signal-grid,
 .card-grid,
-.principles-grid,
-.product-grid {
+.principles-grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.product-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .signal-card p,
@@ -663,6 +667,10 @@ ul.detail-list li::marker {
   .cta-band {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-copy {
