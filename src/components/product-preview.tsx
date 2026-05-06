@@ -2,11 +2,12 @@ import type { Product } from "@/lib/content";
 
 type ProductPreviewProps = {
   product: Product;
+  flat?: boolean;
 };
 
-export function ProductPreview({ product }: ProductPreviewProps) {
+export function ProductPreview({ product, flat = false }: ProductPreviewProps) {
   return (
-    <div className={`product-preview product-preview-${product.slug}`}>
+    <div className={`product-preview product-preview-${product.slug}${flat ? " product-preview-flat" : ""}`}>
       <div className="product-preview-head">
         <span className="product-preview-eyebrow">{product.preview.eyebrow}</span>
         <strong>{product.preview.title}</strong>

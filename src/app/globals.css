@@ -464,6 +464,14 @@ ul.detail-list li::marker {
   overflow: hidden;
 }
 
+.product-preview-flat {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
 .product-preview-head {
   display: grid;
   gap: 8px;
@@ -744,7 +752,7 @@ ul.detail-list li::marker {
 }
 
 .product-card-register .product-preview,
-.page-stack-register .product-preview {
+.page-stack-register .product-preview:not(.product-preview-flat) {
   border-color: rgba(217, 198, 160, 0.2);
   background:
     radial-gradient(circle at top right, rgba(217, 198, 160, 0.12), transparent 38%),
@@ -755,7 +763,7 @@ ul.detail-list li::marker {
 }
 
 .product-card-pranalogic .product-preview,
-.page-stack-pranalogic .product-preview {
+.page-stack-pranalogic .product-preview:not(.product-preview-flat) {
   border-color: rgba(124, 111, 255, 0.24);
   background:
     radial-gradient(circle at top right, rgba(108, 92, 255, 0.16), transparent 38%),
@@ -766,7 +774,7 @@ ul.detail-list li::marker {
 }
 
 .product-card-imopen2 .product-preview,
-.page-stack-imopen2 .product-preview {
+.page-stack-imopen2 .product-preview:not(.product-preview-flat) {
   border-color: rgba(0, 245, 255, 0.22);
   background:
     radial-gradient(circle at top right, rgba(0, 245, 255, 0.16), transparent 38%),
@@ -777,7 +785,7 @@ ul.detail-list li::marker {
 }
 
 .product-card-group-pours .product-preview,
-.page-stack-group-pours .product-preview {
+.page-stack-group-pours .product-preview:not(.product-preview-flat) {
   border-color: rgba(240, 143, 157, 0.2);
   background:
     radial-gradient(circle at top right, rgba(240, 143, 157, 0.16), transparent 38%),

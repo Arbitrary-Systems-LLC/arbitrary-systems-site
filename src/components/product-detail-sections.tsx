@@ -12,14 +12,14 @@ export function ProductDetailSections({ product, pageStackClassName }: ProductDe
     <section className="page-content">
       <div className={`container page-stack ${pageStackClassName}`}>
         <div className="split-grid">
-          <div className="panel product-preview-panel">
-            <ProductPreview product={product} />
-          </div>
-
           <div className="panel product-detail-copy">
             <h2 className="section-heading">Overview</h2>
             <p>{product.overview}</p>
             <p>{product.direction}</p>
+          </div>
+
+          <div className="panel product-preview-panel">
+            <ProductPreview product={product} flat />
           </div>
         </div>
 
