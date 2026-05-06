@@ -11,14 +11,15 @@ export function ProductDetailSections({ product, pageStackClassName }: ProductDe
   return (
     <section className="page-content">
       <div className={`container page-stack ${pageStackClassName}`}>
-        <div className="panel product-detail-top">
-          <div className="product-detail-grid">
+        <div className="split-grid">
+          <div className="panel product-preview-panel">
             <ProductPreview product={product} />
-            <div className="product-detail-copy">
-              <h2 className="section-heading">Overview</h2>
-              <p>{product.overview}</p>
-              <p>{product.direction}</p>
-            </div>
+          </div>
+
+          <div className="panel product-detail-copy">
+            <h2 className="section-heading">Overview</h2>
+            <p>{product.overview}</p>
+            <p>{product.direction}</p>
           </div>
         </div>
 
@@ -40,7 +41,9 @@ export function ProductDetailSections({ product, pageStackClassName }: ProductDe
         </div>
 
         <div className="panel product-action-panel">
-          <span className="status-pill">{product.status}</span>
+          <div className="product-action-meta">
+            <span className="status-pill">{product.status}</span>
+          </div>
           <div className="button-row">
             <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
               {product.betaCtaLabel}
