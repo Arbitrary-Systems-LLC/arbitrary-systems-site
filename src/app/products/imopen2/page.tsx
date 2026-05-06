@@ -47,25 +47,25 @@ export default function Imopen2Page() {
               ))}
             </ul>
           </div>
+        </div>
 
-          <div className="panel detail-pricing-panel">
-            <h2 className="section-heading">{imopen2Pricing.title}</h2>
-            <p>{imopen2Pricing.body}</p>
-            <div className="detail-pricing-grid detail-pricing-grid-three">
-              {imopen2Pricing.tiers.map((tier) => (
-                <div key={tier.name} className="detail-pricing-tier">
-                  <div className="detail-pricing-tier-head">
-                    <h3>{tier.name}</h3>
-                    <span>{tier.price}</span>
-                  </div>
-                  <ul className="detail-list">
-                    {tier.bullets.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
+        <div className="panel detail-pricing-panel">
+          <h2 className="section-heading">{imopen2Pricing.title}</h2>
+          <p>{imopen2Pricing.body}</p>
+          <div className="detail-pricing-grid detail-pricing-grid-three">
+            {imopen2Pricing.tiers.map((tier) => (
+              <div key={tier.name} className="detail-pricing-tier">
+                <div className="detail-pricing-tier-head">
+                  <h3>{tier.name}</h3>
+                  <span>{tier.price}</span>
                 </div>
-              ))}
-            </div>
+                <ul className="detail-list">
+                  {tier.bullets.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </ProductDetailSections>
