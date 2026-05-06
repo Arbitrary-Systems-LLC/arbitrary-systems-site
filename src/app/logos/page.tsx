@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { company } from "@/lib/content";
 import { createMetadata } from "@/lib/metadata";
@@ -128,7 +129,7 @@ export default function LogosPage() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img
+                    <Image
                       src={logo.src}
                       alt={logo.alt}
                       width={logo.width}

@@ -2,9 +2,9 @@ export const company = {
   name: "Arbitrary Systems",
   domain: "https://arbitrarysystems.io",
   email: "hello@arbitrarysystems.io",
-  tagline: "Focused software for collectors, studios, tastings, and real-world plans.",
+  tagline: "Software for the work people still do carefully.",
   description:
-    "Arbitrary Systems builds calm, precise software for serious collectors, studio operators, tasters, and private social coordination, with beta products in The Registry, PranaLogic, I'm open 2, and Group Pours.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, and private plans between trusted people.",
 };
 
 export const capabilities = [
@@ -48,6 +48,19 @@ export const principles = [
   },
 ];
 
+export type ProductPreviewStat = {
+  label: string;
+  value: string;
+};
+
+export type ProductPreview = {
+  eyebrow: string;
+  title: string;
+  stats: ProductPreviewStat[];
+  highlights: string[];
+  footer: string;
+};
+
 export type Product = {
   name: string;
   slug: string;
@@ -55,6 +68,8 @@ export type Product = {
   audience: string;
   status: string;
   appUrl: string;
+  betaCtaLabel: string;
+  contactCtaLabel: string;
   logoIconSrc?: string;
   logoIconWidth?: number;
   logoIconHeight?: number;
@@ -68,6 +83,7 @@ export type Product = {
   direction: string;
   promise: string;
   bullets: string[];
+  preview: ProductPreview;
 };
 
 export type ProductKey = "register" | "pranalogic" | "imopen2" | "groupPours";
@@ -80,6 +96,8 @@ export const products: Record<ProductKey, Product> = {
     audience: "Private collectors and households managing wine, spirits, beer, and cigar collections.",
     status: "Beta",
     appUrl: "https://www.the-registry.net",
+    betaCtaLabel: "Explore Collector Beta",
+    contactCtaLabel: "Talk Collections",
     logoSrc: "/products/the-registry-logo.png",
     logoAlt: "The Registry crest",
     logoWidth: 1024,
@@ -99,6 +117,21 @@ export const products: Record<ProductKey, Product> = {
       "wish lists, photos, and richer category-specific detail as the product expands",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
     ],
+    preview: {
+      eyebrow: "Collection snapshot",
+      title: "Inventory, storage, and value in one calm record.",
+      stats: [
+        { label: "Tracked", value: "642 bottles" },
+        { label: "Locations", value: "4 cellars" },
+        { label: "Value", value: "$86k" },
+      ],
+      highlights: [
+        "Bottle state, price history, and storage location stay attached to the same record.",
+        "Wine, spirits, beer, and cigars can live together without flattening category detail.",
+        "Shared catalog data improves discovery without exposing private ownership context.",
+      ],
+      footer: "wine • spirits • beer • cigars",
+    },
   },
   pranalogic: {
     name: "PranaLogic",
@@ -107,6 +140,8 @@ export const products: Record<ProductKey, Product> = {
     audience: "Yoga studios and boutique fitness businesses managing classes, staff, customers, and one or more locations.",
     status: "Beta",
     appUrl: "https://www.prana-logic.com",
+    betaCtaLabel: "See Studio Beta",
+    contactCtaLabel: "Talk Studio Ops",
     logoIconSrc: "/products/pranalogic-mark.png",
     logoIconWidth: 1920,
     logoIconHeight: 1920,
@@ -129,6 +164,21 @@ export const products: Record<ProductKey, Product> = {
       "booking, cancellation, waitlist, waiver, and intake flows designed around how studios actually operate",
       "a calmer alternative to cluttered studio software without sacrificing operational seriousness",
     ],
+    preview: {
+      eyebrow: "Studio day",
+      title: "Schedules, people, and waivers moving together.",
+      stats: [
+        { label: "Locations", value: "4 active" },
+        { label: "Bookings", value: "112 today" },
+        { label: "Waitlist", value: "18 pending" },
+      ],
+      highlights: [
+        "Recurring schedules, rooms, and dated class instances stay tied to the real calendar.",
+        "Owners, desk staff, teachers, and customers each get the actions that fit their role.",
+        "Waivers, attendance, and booking rules sit close to the flow instead of becoming separate admin work.",
+      ],
+      footer: "classes • staff • customers • payments",
+    },
   },
   imopen2: {
     name: "I'm open 2",
@@ -137,6 +187,8 @@ export const products: Record<ProductKey, Product> = {
     audience: "People making low-pressure real-world plans with trusted circles of friends, family, or community.",
     status: "Beta",
     appUrl: "https://www.imopen2.com",
+    betaCtaLabel: "Try Private Beta",
+    contactCtaLabel: "Talk Private Planning",
     logoSrc: "/products/imopen2-logo.png",
     logoAlt: "I'm open 2 logo",
     logoWidth: 2082,
@@ -157,6 +209,21 @@ export const products: Record<ProductKey, Product> = {
       "silent privacy around delivery, declines, and attention so users are not pressured to perform responsiveness",
       "poster-controlled coordination with trust, locality, and low social pressure leading the design",
     ],
+    preview: {
+      eyebrow: "Circle pulse",
+      title: "Quiet overlap without turning life into a feed.",
+      stats: [
+        { label: "Circles", value: "3 trusted" },
+        { label: "Replies", value: "7 open 2" },
+        { label: "Syncs", value: "2 active" },
+      ],
+      highlights: [
+        "A pulse reaches only the circles that should see it, not everyone a person knows.",
+        "Replies stay lightweight and positive so interest can surface without social theater.",
+        "The original poster decides whether overlap becomes a real plan and who gets brought into it.",
+      ],
+      footer: "pulses • responses • syncs",
+    },
   },
   groupPours: {
     name: "Group Pours",
@@ -165,6 +232,8 @@ export const products: Record<ProductKey, Product> = {
     audience: "Hosts and tasters running guided, blind, or social wine tastings together.",
     status: "Beta",
     appUrl: "https://www.grouppours.com",
+    betaCtaLabel: "Start Tasting Beta",
+    contactCtaLabel: "Talk Tastings",
     logoSrc: "/products/group-pours-wordmark.png",
     logoAlt: "Group Pours wordmark",
     logoWidth: 720,
@@ -184,6 +253,21 @@ export const products: Record<ProductKey, Product> = {
       "structured GPAT sheets, real-time aggregate feedback, and shareable group results",
       "a natural bridge between collaborative tasting and a deeper personal collection record in The Registry",
     ],
+    preview: {
+      eyebrow: "Tasting room",
+      title: "Shared notes and GPAT results while the pours are live.",
+      stats: [
+        { label: "Tasters", value: "12 joined" },
+        { label: "Wines", value: "6 poured" },
+        { label: "Blind", value: "on" },
+      ],
+      highlights: [
+        "Hosts run the room while tasters join by code or QR and move straight into structured note capture.",
+        "Blind flights stay hidden until the right moment, with reveal and control still in the host's hands.",
+        "Aggregate notes keep getting more useful as the group fills in the tasting together.",
+      ],
+      footer: "host flow • blind mode • live results",
+    },
   },
 };
 

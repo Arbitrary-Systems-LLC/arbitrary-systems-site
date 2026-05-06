@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { products } from "@/lib/content";
 import { ProductLogo } from "@/components/product-logo";
+import { ProductPreview } from "@/components/product-preview";
 import { createMetadata } from "@/lib/metadata";
 
 const product = products.imopen2;
@@ -26,6 +27,9 @@ export default function Imopen2Page() {
         <div className="container page-stack page-stack-imopen2">
           <div className="split-grid">
             <div className="panel">
+              <ProductPreview product={product} />
+            </div>
+            <div className="panel">
               <h2 className="section-heading">Overview</h2>
               <p>{product.overview}</p>
               <p>{product.direction}</p>
@@ -48,10 +52,10 @@ export default function Imopen2Page() {
             <span className="status-pill">{product.status}</span>
             <div className="button-row">
               <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
-                Visit Beta
+                {product.betaCtaLabel}
               </a>
               <Link href="/contact" className="button">
-                Contact
+                {product.contactCtaLabel}
               </Link>
             </div>
           </div>

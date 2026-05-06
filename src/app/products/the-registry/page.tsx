@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { products } from "@/lib/content";
 import { ProductLogo } from "@/components/product-logo";
+import { ProductPreview } from "@/components/product-preview";
 import { createMetadata } from "@/lib/metadata";
 
 const product = products.register;
@@ -14,7 +15,7 @@ export const metadata = createMetadata({
 export default function RegistryPage() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero page-hero-register">
         <div className="container">
           <ProductLogo product={product} priority />
           <div className="eyebrow">{product.eyebrow}</div>
@@ -23,8 +24,11 @@ export default function RegistryPage() {
         </div>
       </section>
       <section className="page-content">
-        <div className="container page-stack">
+        <div className="container page-stack page-stack-register">
           <div className="split-grid">
+            <div className="panel">
+              <ProductPreview product={product} />
+            </div>
             <div className="panel">
               <h2 className="section-heading">Overview</h2>
               <p>{product.overview}</p>
@@ -48,10 +52,10 @@ export default function RegistryPage() {
             <span className="status-pill">{product.status}</span>
             <div className="button-row">
               <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
-                Visit Beta
+                {product.betaCtaLabel}
               </a>
               <Link href="/contact" className="button">
-                Contact
+                {product.contactCtaLabel}
               </Link>
             </div>
           </div>

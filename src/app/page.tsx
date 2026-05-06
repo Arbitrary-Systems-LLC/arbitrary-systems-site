@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { capabilities, company, featuredProducts, principles } from "@/lib/content";
-import { ProductLogo } from "@/components/product-logo";
+import { ProductCard } from "@/components/product-card";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds focused software products for serious collectors, studio operators, tasters, and private social planning, with beta products in The Registry, PranaLogic, I'm open 2, and Group Pours.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, and private plans between trusted people.",
   path: "/",
 });
 
@@ -24,16 +24,16 @@ export default function HomePage() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <div className="eyebrow">Arbitrary Systems</div>
-            <h1>Focused software for real-world detail.</h1>
+            <h1>Software for the work people still do carefully.</h1>
             <p className="hero-intro">
-              We build products around specific operating realities, with current beta work spanning collector-grade inventory, studio operations, collaborative tastings, and private social planning.
+              Arbitrary Systems builds beta products for serious collections, studio operations, collaborative tastings, and private plans between trusted people.
             </p>
             <p className="hero-secondary">
-              The aim is practical: strong underlying models, calmer interfaces, and software that feels trustworthy once it becomes part of the weekly routine.
+              Each product starts with a real workflow and a real operating rhythm, with enough structure underneath to stay useful once the records, schedules, pours, or plans become part of ordinary life.
             </p>
             <div className="button-row">
               <Link href="/products" className="button primary">
-                Explore Products
+                Explore Beta Products
               </Link>
               <Link href="/contact" className="button">
                 Start a Conversation
@@ -71,7 +71,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>Four beta products: The Registry, PranaLogic, Group Pours, and I&apos;m open 2.</p>
+            <p>Four beta products with live links: The Registry, PranaLogic, Group Pours, and I&apos;m open 2.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -104,31 +104,14 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">Current product work</div>
-            <h2 className="section-heading">Four products, each rooted in a real operating environment.</h2>
+            <h2 className="section-heading">Four beta products, each with a real job to do.</h2>
             <p className="section-intro narrow-copy">
-              Each product grows from an active codebase and a concrete domain model, not just a concept, and all four are now available in beta. One centers on serious collections. One centers on the daily mechanics of running a studio well. One centers on collaborative tasting sessions. One centers on private, low-pressure coordination between trusted people.
+              Each product grows from an active codebase and a concrete domain model, not just a concept. The visual glimpses below are meant to show the kind of work each product is built to hold: collector records, live studio operations, tasting sessions, and private planning between trusted people.
             </p>
           </div>
           <div className="product-grid">
             {featuredProducts.map((product) => (
-              <article key={product.slug} className={`product-card product-card-${product.slug}`}>
-                <ProductLogo product={product} />
-                <div className="product-card-top">
-                  <span className="status-pill">{product.status}</span>
-                  <span className="product-eyebrow">{product.eyebrow}</span>
-                </div>
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <p className="product-audience">{product.audience}</p>
-                <div className="button-row">
-                  <Link href={`/products/${product.slug}`} className="button primary">
-                    Learn More
-                  </Link>
-                  <a href={product.appUrl} className="button" target="_blank" rel="noreferrer">
-                    Visit Beta
-                  </a>
-                </div>
-              </article>
+              <ProductCard key={product.slug} product={product} />
             ))}
           </div>
         </div>

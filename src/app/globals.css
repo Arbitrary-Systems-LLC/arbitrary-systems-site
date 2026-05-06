@@ -335,6 +335,7 @@ section {
 .card h3,
 .principle h3,
 .panel h3,
+.product-card h2,
 .product-card h3 {
   color: var(--foreground);
   font-family: var(--font-serif);
@@ -450,6 +451,159 @@ ul.detail-list li::marker {
   padding-top: 28px;
 }
 
+.product-preview {
+  margin: 20px 0 22px;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(217, 198, 160, 0.16);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(13, 19, 23, 0.98), rgba(10, 15, 18, 0.92));
+  background-size: 24px 24px, 24px 24px, auto;
+  overflow: hidden;
+}
+
+.product-preview-head {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.product-preview-eyebrow,
+.product-preview-footer,
+.product-preview-stat span {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+}
+
+.product-preview-head strong {
+  color: var(--foreground);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.product-preview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.product-preview-stat {
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.product-preview-stat span {
+  display: block;
+  color: var(--muted);
+}
+
+.product-preview-stat strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--foreground);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-preview-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.product-preview-list li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--muted-strong);
+  line-height: 1.65;
+}
+
+.product-preview-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: currentColor;
+  transform: translateY(-50%);
+  opacity: 0.88;
+}
+
+.product-preview-footer {
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+.product-card-register {
+  border-color: rgba(217, 198, 160, 0.18);
+  background:
+    radial-gradient(circle at top, rgba(217, 198, 160, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(31, 26, 22, 0.96), rgba(20, 18, 16, 0.9));
+}
+
+.product-card-register .product-eyebrow {
+  color: #ead7b4;
+}
+
+.product-card-register .status-pill,
+.page-stack-register .status-pill {
+  border-color: rgba(217, 198, 160, 0.28);
+  color: #ead7b4;
+  background: rgba(73, 52, 29, 0.34);
+}
+
+.product-card-register .button.primary,
+.page-stack-register .button.primary {
+  background: linear-gradient(135deg, rgba(181, 134, 87, 0.38), rgba(112, 79, 43, 0.24));
+  border-color: rgba(217, 198, 160, 0.32);
+}
+
+.product-card-register .button.primary:hover,
+.page-stack-register .button.primary:hover {
+  background: linear-gradient(135deg, rgba(181, 134, 87, 0.46), rgba(112, 79, 43, 0.32));
+}
+
+.product-card-pranalogic {
+  border-color: rgba(132, 104, 255, 0.2);
+  background:
+    radial-gradient(circle at top, rgba(132, 104, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, rgba(23, 21, 38, 0.96), rgba(16, 15, 27, 0.9));
+}
+
+.product-card-pranalogic .product-eyebrow {
+  color: #bab1ff;
+}
+
+.product-card-pranalogic .status-pill,
+.page-stack-pranalogic .status-pill {
+  border-color: rgba(124, 111, 255, 0.3);
+  color: #cdc7ff;
+  background: rgba(50, 37, 103, 0.34);
+}
+
+.product-card-pranalogic .button.primary,
+.page-stack-pranalogic .button.primary {
+  background: linear-gradient(135deg, rgba(116, 70, 255, 0.36), rgba(77, 154, 255, 0.24));
+  border-color: rgba(124, 111, 255, 0.34);
+}
+
+.product-card-pranalogic .button.primary:hover,
+.page-stack-pranalogic .button.primary:hover {
+  background: linear-gradient(135deg, rgba(116, 70, 255, 0.44), rgba(77, 154, 255, 0.32));
+}
+
 .product-card-imopen2 {
   border-color: rgba(0, 245, 255, 0.18);
   background:
@@ -529,6 +683,18 @@ ul.detail-list li::marker {
   padding-top: 0;
 }
 
+.page-hero-register {
+  background:
+    radial-gradient(circle at top left, rgba(217, 198, 160, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(144, 110, 69, 0.14), transparent 28%);
+}
+
+.page-hero-pranalogic {
+  background:
+    radial-gradient(circle at top left, rgba(124, 111, 255, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(77, 154, 255, 0.14), transparent 28%);
+}
+
 .page-hero-imopen2 {
   background:
     radial-gradient(circle at top left, rgba(0, 245, 255, 0.14), transparent 24%),
@@ -549,6 +715,20 @@ ul.detail-list li::marker {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.page-stack-register .panel {
+  border-color: rgba(217, 198, 160, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(217, 198, 160, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(31, 26, 22, 0.94), rgba(20, 18, 16, 0.84));
+}
+
+.page-stack-pranalogic .panel {
+  border-color: rgba(124, 111, 255, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(124, 111, 255, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(27, 23, 45, 0.94), rgba(17, 15, 28, 0.84));
+}
+
 .page-stack-imopen2 .panel {
   border-color: rgba(0, 245, 255, 0.16);
   background:
@@ -561,6 +741,50 @@ ul.detail-list li::marker {
   background:
     radial-gradient(circle at top left, rgba(240, 143, 157, 0.08), transparent 24%),
     linear-gradient(180deg, rgba(37, 23, 30, 0.94), rgba(24, 17, 21, 0.86));
+}
+
+.product-card-register .product-preview,
+.page-stack-register .product-preview {
+  border-color: rgba(217, 198, 160, 0.2);
+  background:
+    radial-gradient(circle at top right, rgba(217, 198, 160, 0.12), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(24, 20, 17, 0.98), rgba(18, 15, 13, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.product-card-pranalogic .product-preview,
+.page-stack-pranalogic .product-preview {
+  border-color: rgba(124, 111, 255, 0.24);
+  background:
+    radial-gradient(circle at top right, rgba(108, 92, 255, 0.16), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(17, 16, 31, 0.98), rgba(12, 11, 22, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.product-card-imopen2 .product-preview,
+.page-stack-imopen2 .product-preview {
+  border-color: rgba(0, 245, 255, 0.22);
+  background:
+    radial-gradient(circle at top right, rgba(0, 245, 255, 0.16), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(9, 22, 28, 0.98), rgba(6, 16, 21, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.product-card-group-pours .product-preview,
+.page-stack-group-pours .product-preview {
+  border-color: rgba(240, 143, 157, 0.2);
+  background:
+    radial-gradient(circle at top right, rgba(240, 143, 157, 0.16), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(31, 18, 23, 0.98), rgba(20, 13, 16, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
 }
 
 .logo-library-grid {
@@ -731,6 +955,23 @@ ul.detail-list li::marker {
 
   .product-logo-wordmark {
     width: min(198px, 100%);
+  }
+
+  .product-preview {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .product-preview-head strong {
+    font-size: 1.08rem;
+  }
+
+  .product-preview-stats {
+    gap: 10px;
+  }
+
+  .product-preview-stat {
+    padding: 10px 12px;
   }
 
   section {
