@@ -187,46 +187,47 @@ export const products: Record<ProductKey, Product> = {
   imopen2: {
     name: "I'm open 2",
     slug: "imopen2",
-    eyebrow: "Private pulse planning",
-    audience: "People making low-pressure real-world plans with trusted circles of friends, family, or community.",
+    eyebrow: "Private social planning",
+    audience: "People making low-pressure real-world plans with trusted circles of friends, family, dates, or community.",
     status: "Beta",
     appUrl: "https://www.imopen2.com",
-    betaCtaLabel: "Try Private Beta",
-    contactCtaLabel: "Talk Private Planning",
+    betaCtaLabel: "Start free",
+    contactCtaLabel: "Talk private planning",
     logoSrc: "/products/imopen2-logo.png",
     logoAlt: "I'm open 2 logo",
     logoWidth: 2082,
     logoHeight: 2082,
     logoStyle: "mark",
     description:
-      "A private, circle-based planning app built around pulses, responses, and syncs, helping people turn small real-world openness into actual plans without public feeds or noisy group chats.",
+      'A private, circle-based planning app for turning "we should hang out" into real plans, without public feeds, group-chat pressure, or an algorithm deciding what matters.',
     overview:
-      "I'm open 2 is now in beta for people who want a calmer way to signal they are open 2 dinner, a drink, a game, or some other small plan without broadcasting themselves to everyone they know.",
+      "I'm open 2 is in beta for people who want a calmer way to say what they are open 2 without broadcasting themselves to everyone they know or starting another group-chat negotiation.",
     direction:
-      "Its direction centers on private circles, expiring pulses, named positive response, silent privacy, and poster-controlled sync creation so interest can surface without leaking attention metadata or forcing the app to behave like a social feed.",
+      "Its direction centers on private circles, expiring Pulses, natural Echo language, quiet declines, Social Pulse controls, and pulser-controlled Sync creation so useful overlap can surface without turning attention into a performance.",
     promise:
       "The goal is to make real-world coordination feel more human, more private, and less socially exhausting.",
     bullets: [
-      "private, invite-only circles with no public feeds or visible engagement theater",
-      "pulse-based planning that starts with a small moment of openness and lets useful overlap surface quietly",
-      "an \"I'm open 2\" response language and a Sync step that turns interest into an actual plan",
-      "silent privacy around delivery, declines, and attention so users are not pressured to perform responsiveness",
-      "poster-controlled coordination with trust, locality, and low social pressure leading the design",
+      "private, invite-only circles with no public feeds, follower counts, or visible engagement theater",
+      "Pulses that say what someone is open 2 and expire before stale plans pile up",
+      'Echo language that reads naturally: "Mando is also open 2 dinner this week"',
+      "quiet privacy around delivery, declines, and attention so users are not pressured to perform responsiveness",
+      "pulser-controlled Sync creation with private availability counts and clear host and organizer choices",
+      "ad-free pricing with a free core tier, Supporter, and Organizer plans",
     ],
     preview: {
       eyebrow: "Circle pulse",
-      title: "Quiet overlap without turning life into a feed.",
+      title: "Private overlap without turning life into a feed.",
       stats: [
-        { label: "Circles", value: "3 trusted" },
-        { label: "Replies", value: "7 open 2" },
-        { label: "Syncs", value: "2 active" },
+        { label: "Pulse", value: "dinner this week" },
+        { label: "Echoed", value: "Kate, Alex" },
+        { label: "No response", value: "3" },
       ],
       highlights: [
-        "A pulse reaches only the circles that should see it, not everyone a person knows.",
-        "Replies stay lightweight and positive so interest can surface without social theater.",
-        "The original poster decides whether overlap becomes a real plan and who gets brought into it.",
+        "Say what you are open 2 and choose the trusted circles that should see it.",
+        "People can Echo back when they are also open 2, while quiet passes stay private.",
+        "The pulser sees private availability counts, then decides when interest becomes a Sync.",
       ],
-      footer: "pulses • responses • syncs",
+      footer: "Pulses • Echos • Syncs • private circles",
     },
   },
   groupPours: {
@@ -352,6 +353,82 @@ export const registryPricing = {
         "Hosted Group Pours tastings, rankings, and saved tasting history",
         "Full Distinctions catalog and progress detail",
         "Advanced import cleanup and dedupe tools",
+      ],
+    },
+  ],
+} as const;
+
+export const imopen2DetailSections = [
+  {
+    title: "Pulse, Echo, Sync.",
+    body:
+      "I'm open 2 uses small language for a better social flow. A Pulse says what you are open 2. An Echo means someone is also open 2. A Sync is the confirmed plan when the pulser is ready to make it real.",
+    bullets: [
+      "Create a Pulse with a date or time window, vibe, cap, expiration, and circle audience",
+      "Receive Echos without turning interest into a public performance",
+      "Use private availability counts to choose a time before creating a Sync",
+      "Keep sent Echos out of The Field so incoming activity stays calm",
+    ],
+  },
+  {
+    title: "Built for trusted circles, not public reach.",
+    body:
+      "Plans stay scoped to invite-only circles. There are no public feeds, follower counts, or algorithmic discovery loops. Users choose who can reach them, how open they are, and when a plan becomes real.",
+    bullets: [
+      "Private, invite-only circles",
+      "Social Pulse controls for what can reach The Field",
+      'Quiet "Not this time" behavior without exposing who declined',
+      "Block and notification settings close at hand",
+      "Time-bound invites, one-time QR invites, and account-based circle membership",
+    ],
+  },
+  {
+    title: "The Field stays focused.",
+    body:
+      "The Field is for incoming Pulses, circle invites, and Sync updates. My Echos holds the things you already echoed, so the main screen does not become cluttered with your own outbound responses.",
+    bullets: [
+      "The Field for incoming Pulses and live coordination",
+      "My Echos for what you said you are also open 2",
+      "Circles for private groups, invites, members, muting, and block controls",
+      "Syncs for confirmed plans, RSVP state, reminders, updates, and cancellations",
+      "Settings for dark and light mode, notifications, calendar invite preference, billing, and feedback",
+    ],
+  },
+] as const;
+
+export const imopen2Pricing = {
+  title: "Start free. Support the product when it becomes part of how you make plans.",
+  body:
+    "The core app is free to start. Supporter is $2/month through August 2026, then $3/month, with annual options at $24 and $30. Organizer is $7/month or $70/year for people coordinating larger circles and more activity.",
+  tiers: [
+    {
+      name: "Free",
+      price: "Free",
+      bullets: [
+        "Core private circles",
+        "Pulse, Echo, and Sync flow",
+        "Basic notification settings",
+        "Enough room to try the product with real people",
+      ],
+    },
+    {
+      name: "Supporter",
+      price: "$2/month now, then $3/month",
+      bullets: [
+        "Saved Pulse templates",
+        "Richer planning controls",
+        "More room for active Pulses and circles",
+        "A small way to support an ad-free product",
+      ],
+    },
+    {
+      name: "Organizer",
+      price: "$7/month or $70/year",
+      bullets: [
+        "Larger circles",
+        "More saved templates",
+        "Invite reminders and pending invite visibility",
+        "More room for the person who often makes plans happen",
       ],
     },
   ],

@@ -723,24 +723,28 @@ ul.detail-list li::marker {
   align-items: center;
 }
 
-.registry-feature-panel,
-.registry-pricing-panel {
+.detail-feature-panel,
+.detail-pricing-panel {
   position: relative;
 }
 
-.registry-feature-panel p,
-.registry-pricing-panel p {
+.detail-feature-panel p,
+.detail-pricing-panel p {
   max-width: 70ch;
 }
 
-.registry-pricing-grid {
+.detail-pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-top: 24px;
 }
 
-.registry-pricing-tier {
+.detail-pricing-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-pricing-tier {
   padding: 18px;
   border-radius: 22px;
   border: 1px solid rgba(217, 198, 160, 0.12);
@@ -751,7 +755,7 @@ ul.detail-list li::marker {
   background-size: 24px 24px, 24px 24px, auto;
 }
 
-.registry-pricing-tier-head {
+.detail-pricing-tier-head {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -759,11 +763,11 @@ ul.detail-list li::marker {
   margin-bottom: 12px;
 }
 
-.registry-pricing-tier-head h3 {
+.detail-pricing-tier-head h3 {
   margin: 0;
 }
 
-.registry-pricing-tier-head span {
+.detail-pricing-tier-head span {
   color: var(--accent-strong);
   font-size: 0.95rem;
   letter-spacing: 0.04em;
@@ -951,7 +955,8 @@ ul.detail-list li::marker {
     grid-template-columns: 1fr;
   }
 
-  .registry-pricing-grid {
+  .detail-pricing-grid,
+  .detail-pricing-grid-three {
     grid-template-columns: 1fr;
   }
 

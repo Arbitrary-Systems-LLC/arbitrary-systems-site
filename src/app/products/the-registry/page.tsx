@@ -23,7 +23,7 @@ export default function RegistryPage() {
         </div>
       </section>
       <ProductDetailSections product={product} pageStackClassName="page-stack-register">
-        <div className="panel registry-feature-panel">
+        <div className="panel detail-feature-panel">
           <h2 className="section-heading">{registryDetailSections[0].title}</h2>
           <p>{registryDetailSections[0].body}</p>
           <ul className="detail-list">
@@ -35,7 +35,7 @@ export default function RegistryPage() {
 
         <div className="split-grid">
           {registryDetailSections.slice(1, 3).map((section) => (
-            <div key={section.title} className="panel registry-feature-panel">
+            <div key={section.title} className="panel detail-feature-panel">
               <h2 className="section-heading">{section.title}</h2>
               <p>{section.body}</p>
               <ul className="detail-list">
@@ -48,7 +48,7 @@ export default function RegistryPage() {
         </div>
 
         <div className="split-grid">
-          <div className="panel registry-feature-panel">
+          <div className="panel detail-feature-panel">
             <h2 className="section-heading">{registryDetailSections[3].title}</h2>
             <p>{registryDetailSections[3].body}</p>
             <ul className="detail-list">
@@ -58,13 +58,13 @@ export default function RegistryPage() {
             </ul>
           </div>
 
-          <div className="panel registry-pricing-panel" id="collector">
+          <div className="panel detail-pricing-panel" id="collector">
             <h2 className="section-heading">{registryPricing.title}</h2>
             <p>{registryPricing.body}</p>
-            <div className="registry-pricing-grid">
+            <div className="detail-pricing-grid">
               {registryPricing.tiers.map((tier) => (
-                <div key={tier.name} className="registry-pricing-tier">
-                  <div className="registry-pricing-tier-head">
+                <div key={tier.name} className="detail-pricing-tier">
+                  <div className="detail-pricing-tier-head">
                     <h3>{tier.name}</h3>
                     <span>{tier.price}</span>
                   </div>
