@@ -35,7 +35,7 @@ export default function AboutPage() {
                 The work is guided by a preference for strong operational models, restrained design, and practical utility. Rather than chasing novelty for its own sake, Arbitrary Systems approaches product development as a long-term exercise in clarity, reliability, and fit.
               </p>
               <p>
-                Current product work includes The Arbitrary Register, a collector-first system for wine, spirits, beer, and cigars, PranaLogic, a studio operating system for yoga and boutique fitness businesses, and I&apos;m open 2, a private pulse-based planning app for small real-world plans.
+                Current product work includes The Registry, a collector-first system for wine, spirits, beer, and cigars, PranaLogic, a studio operating system for yoga and boutique fitness businesses, Group Pours, a collaborative tasting app built around GPAT, and I&apos;m open 2, a private pulse-based planning app for small real-world plans.
               </p>
             </article>
             <article className="panel">

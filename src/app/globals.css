@@ -475,6 +475,35 @@ ul.detail-list li::marker {
   background: linear-gradient(135deg, rgba(0, 245, 255, 0.34), rgba(0, 124, 137, 0.24));
 }
 
+.product-card-group-pours {
+  border-color: rgba(196, 58, 85, 0.2);
+  background:
+    radial-gradient(circle at top, rgba(240, 143, 157, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(33, 23, 29, 0.96), rgba(23, 18, 22, 0.9));
+}
+
+.product-card-group-pours .product-eyebrow {
+  color: #f0a7b2;
+}
+
+.product-card-group-pours .status-pill,
+.page-stack-group-pours .status-pill {
+  border-color: rgba(240, 143, 157, 0.28);
+  color: #ffd6dc;
+  background: rgba(72, 22, 35, 0.4);
+}
+
+.product-card-group-pours .button.primary,
+.page-stack-group-pours .button.primary {
+  background: linear-gradient(135deg, rgba(196, 58, 85, 0.36), rgba(164, 46, 70, 0.26));
+  border-color: rgba(240, 143, 157, 0.3);
+}
+
+.product-card-group-pours .button.primary:hover,
+.page-stack-group-pours .button.primary:hover {
+  background: linear-gradient(135deg, rgba(196, 58, 85, 0.44), rgba(164, 46, 70, 0.32));
+}
+
 .status-pill {
   display: inline-block;
   padding: 10px 16px;
@@ -502,6 +531,12 @@ ul.detail-list li::marker {
     radial-gradient(circle at top right, rgba(0, 124, 137, 0.16), transparent 28%);
 }
 
+.page-hero-group-pours {
+  background:
+    radial-gradient(circle at top left, rgba(240, 143, 157, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(196, 58, 85, 0.16), transparent 28%);
+}
+
 .page-stack {
   gap: 24px;
 }
@@ -515,6 +550,13 @@ ul.detail-list li::marker {
   background:
     radial-gradient(circle at top left, rgba(0, 245, 255, 0.08), transparent 24%),
     linear-gradient(180deg, rgba(18, 31, 38, 0.94), rgba(11, 20, 26, 0.84));
+}
+
+.page-stack-group-pours .panel {
+  border-color: rgba(196, 58, 85, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(240, 143, 157, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(37, 23, 30, 0.94), rgba(24, 17, 21, 0.86));
 }
 
 .logo-library-grid {

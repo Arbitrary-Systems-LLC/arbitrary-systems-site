@@ -6,13 +6,14 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds focused software products for serious collectors, studio operators, and private social planning, with current work in The Arbitrary Register, PranaLogic, and I'm open 2.",
+    "Arbitrary Systems builds focused software products for serious collectors, studio operators, tasters, and private social planning, with current work in The Registry, PranaLogic, I'm open 2, and Group Pours.",
   path: "/",
 });
 
 const signals = [
   "Collector software for wine, spirits, beer, and cigars",
   "Studio operations software for yoga and boutique fitness",
+  "Collaborative tasting software built around GPAT and live results",
   "Private, circle-based pulses and syncs for small real-world plans",
 ];
 
@@ -25,7 +26,7 @@ export default function HomePage() {
             <div className="eyebrow">Arbitrary Systems</div>
             <h1>Focused software for real-world detail.</h1>
             <p className="hero-intro">
-              We build products around specific operating realities, with current work spanning collector-grade inventory, studio operations, and private social planning.
+              We build products around specific operating realities, with current work spanning collector-grade inventory, studio operations, collaborative tastings, and private social planning.
             </p>
             <p className="hero-secondary">
               The aim is practical: strong underlying models, calmer interfaces, and software that feels trustworthy once it becomes part of the weekly routine.
@@ -70,7 +71,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>The Arbitrary Register for collectors, PranaLogic for studio operations, and I&apos;m open 2 for private, low-pressure coordination.</p>
+            <p>The Registry for collectors, PranaLogic for studio operations, Group Pours for collaborative tastings, and I&apos;m open 2 for private coordination.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -103,9 +104,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">Current product work</div>
-            <h2 className="section-heading">Three products, each rooted in a real operating environment.</h2>
+            <h2 className="section-heading">Four products, each rooted in a real operating environment.</h2>
             <p className="section-intro narrow-copy">
-              Each product grows from an active codebase and a concrete domain model, not just a concept. One centers on serious collections. One centers on the daily mechanics of running a studio well. One centers on private, low-pressure coordination between trusted people.
+              Each product grows from an active codebase and a concrete domain model, not just a concept. One centers on serious collections. One centers on the daily mechanics of running a studio well. One centers on collaborative tasting sessions. One centers on private, low-pressure coordination between trusted people.
             </p>
           </div>
           <div className="product-grid">
@@ -153,7 +154,7 @@ export default function HomePage() {
             <div className="eyebrow">Get in touch</div>
             <h2 className="section-heading">If you are close to any of these domains, we should talk.</h2>
             <p className="section-intro narrow-copy">
-              {company.name} maintains this site as a company presence and contact point for collectors, studio operators, community builders, collaborators, and other early product conversations.
+              {company.name} maintains this site as a company presence and contact point for collectors, studio operators, tasting hosts, community builders, collaborators, and other early product conversations.
             </p>
           </div>
           <div className="button-row">
