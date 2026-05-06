@@ -1,13 +1,15 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { Product } from "@/lib/content";
 import { ProductPreview } from "@/components/product-preview";
 
 type ProductDetailSectionsProps = {
   product: Product;
   pageStackClassName: string;
+  children?: ReactNode;
 };
 
-export function ProductDetailSections({ product, pageStackClassName }: ProductDetailSectionsProps) {
+export function ProductDetailSections({ product, pageStackClassName, children }: ProductDetailSectionsProps) {
   return (
     <section className="page-content">
       <div className={`container page-stack ${pageStackClassName}`}>
@@ -39,6 +41,8 @@ export function ProductDetailSections({ product, pageStackClassName }: ProductDe
             </ul>
           </div>
         </div>
+
+        {children}
 
         <div className="panel product-action-panel">
           <div className="product-action-meta">

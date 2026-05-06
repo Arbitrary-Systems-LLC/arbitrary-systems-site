@@ -723,6 +723,52 @@ ul.detail-list li::marker {
   align-items: center;
 }
 
+.registry-feature-panel,
+.registry-pricing-panel {
+  position: relative;
+}
+
+.registry-feature-panel p,
+.registry-pricing-panel p {
+  max-width: 70ch;
+}
+
+.registry-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.registry-pricing-tier {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(217, 198, 160, 0.12);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(27, 22, 19, 0.88), rgba(18, 15, 13, 0.82));
+  background-size: 24px 24px, 24px 24px, auto;
+}
+
+.registry-pricing-tier-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.registry-pricing-tier-head h3 {
+  margin: 0;
+}
+
+.registry-pricing-tier-head span {
+  color: var(--accent-strong);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
 .page-stack-register .panel {
   border-color: rgba(217, 198, 160, 0.16);
   background:
@@ -902,6 +948,10 @@ ul.detail-list li::marker {
   }
 
   .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-pricing-grid {
     grid-template-columns: 1fr;
   }
 

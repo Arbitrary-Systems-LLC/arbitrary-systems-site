@@ -70,6 +70,7 @@ export type Product = {
   appUrl: string;
   betaCtaLabel: string;
   contactCtaLabel: string;
+  detailCtaLabel?: string;
   logoIconSrc?: string;
   logoIconWidth?: number;
   logoIconHeight?: number;
@@ -92,45 +93,48 @@ export const products: Record<ProductKey, Product> = {
   register: {
     name: "The Registry",
     slug: "the-registry",
-    eyebrow: "Collector system",
-    audience: "Private collectors and households managing wine, spirits, beer, and cigar collections.",
+    eyebrow: "Collector intelligence",
+    audience: "Private collectors, households, and tasting-minded enthusiasts managing wine, beer, spirits, and cigar collections.",
     status: "Beta",
     appUrl: "https://www.the-registry.net",
-    betaCtaLabel: "Explore Collector Beta",
+    betaCtaLabel: "Start The Registry",
     contactCtaLabel: "Talk Collections",
+    detailCtaLabel: "See Collector",
     logoSrc: "/products/the-registry-logo.png",
     logoAlt: "The Registry crest",
     logoWidth: 1024,
     logoHeight: 1024,
     logoStyle: "mark",
     description:
-      "A collector-first system for wine, spirits, beer, and cigars, designed to keep inventory, storage, pricing, and purchase history in one calm, trustworthy place.",
+      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, and Group Pours into one collector profile.",
     overview:
-      "The Registry is now in beta for people who maintain serious collections and want better control over what they own, where it lives, what it cost, and how it changes over time.",
+      "The Registry is in beta for collectors who want one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
     direction:
-      "Its direction is shaped by real collector needs: fast capture, category-specific depth, precise storage records, and a shared catalog model that improves discovery without exposing private ownership details.",
+      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, category-specific metadata, consumed-history capture, tasting notes, Distinctions, Standouts, and a shared catalog that improves discovery without exposing private ownership details.",
     promise:
-      "The goal is to make a serious collection easier to maintain, easier to search, and easier to trust as it grows.",
+      "The goal is to make a serious collection easier to maintain, easier to search, easier to taste from, and more meaningful as history accumulates.",
     bullets: [
       "multi-category records for wine, beer, spirits, and cigars",
-      "clear tracking for quantity, bottle state, storage location, purchase price, and current value",
-      "wish lists, photos, and richer category-specific detail as the product expands",
+      "CellarTracker and CSV import, including consumed-history files",
+      "location, bin, quantity, bottle state, purchase history, and current value",
+      "Group Pours connection for hosted tastings, rankings, polished notes, and saved tasting history",
+      "Distinctions and Standouts that turn collection and tasting history into a living profile",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
     ],
     preview: {
       eyebrow: "Collection snapshot",
-      title: "Inventory, storage, and value in one calm record.",
+      title: "Inventory, tastings, and collector intelligence in one place.",
       stats: [
         { label: "Tracked", value: "642 bottles" },
         { label: "Locations", value: "4 cellars" },
         { label: "Value", value: "$86k" },
       ],
       highlights: [
-        "Bottle state, price history, and storage location stay attached to the same record.",
-        "Wine, spirits, beer, and cigars can live together without flattening category detail.",
-        "Shared catalog data improves discovery without exposing private ownership context.",
+        "Track what you own, where it lives, what it cost, and what needs attention next.",
+        "Import CellarTracker and CSV files, including consumed-history exports that make Distinctions smarter.",
+        "Collector includes Group Pours, so hosted tastings, rankings, and polished notes can become part of the same long-term profile.",
       ],
-      footer: "wine • spirits • beer • cigars",
+      footer: "wine • beer • spirits • cigars • Group Pours",
     },
   },
   pranalogic: {
@@ -272,3 +276,83 @@ export const products: Record<ProductKey, Product> = {
 };
 
 export const featuredProducts = [products.register, products.pranalogic, products.imopen2, products.groupPours];
+
+export const registryDetailSections = [
+  {
+    title: "Your collection, without flattening the details.",
+    body:
+      "The Registry tracks wine, beer, spirits, and cigars in one private record while preserving the category-specific details that matter: vintage, varietal, producer, region, proof, format, bottle state, location, bin, quantity, purchase history, and estimated value.",
+    bullets: [
+      "In-stock, pending, consumed, wishlist, and open-bottle states",
+      "Location and bin tracking for real cellar and cabinet organization",
+      "Category-specific metadata for wine, beer, spirits, and cigars",
+      "Dashboard views for receiving, low stock, drink windows, and attention items",
+    ],
+  },
+  {
+    title: "Bring the history with you.",
+    body:
+      "Collector supports CellarTracker and CSV import, including consumed-history files. The best CellarTracker import comes from exporting Individual Bottles with all fields selected, so location, bin, purchase date, delivery date, and richer wine metadata can come across cleanly.",
+    bullets: [
+      "Collection import for current and pending bottles",
+      "Consumed-history import for what you have already experienced",
+      "Dedupe preview before import",
+      "Cleanup tools for messy repeat imports",
+      "Export remains available so users can always get their data back",
+    ],
+  },
+  {
+    title: "A profile of what you collect and what you love.",
+    body:
+      "Distinctions turn collection depth, consumption history, geography, varietal breadth, aging, and tasting behavior into an explainable collector profile. Standouts create a lighter preference layer by asking what stood out from recent things you have had, without forcing everything into a 100-point score.",
+    bullets: [
+      "Distinctions across wine, beer, spirits, cigars, collection depth, and experience history",
+      "Clickable progress details explaining how each Distinction is computed",
+      "Standouts for casual favorites without rigid scores",
+      "Future shared-registry support for households and couples with different favorites",
+    ],
+  },
+  {
+    title: "The tasting happens in Group Pours. The history lives in The Registry.",
+    body:
+      "Collector includes Group Pours. Start a tasting from bottles in The Registry, host it in Group Pours, then save rankings, polished notes, and tasting summaries back to the collector profile. Inventory changes still require explicit confirmation, so hosting a tasting never silently consumes bottles.",
+    bullets: [
+      "Open selected Registry wines directly in a Group Pours hosted tasting",
+      "Save tasting summaries and polished notes back to The Registry",
+      "Use tasting history to feed Distinctions and future recommendations",
+      "Keep inventory authority in The Registry with explicit consume confirmation",
+    ],
+  },
+] as const;
+
+export const registryPricing = {
+  title: "Free to begin. Collector when it becomes home.",
+  body:
+    "Free is useful by design for manual tracking and getting comfortable with the registry model. Collector is $7/month or $70/year and includes The Registry plus Group Pours.",
+  tiers: [
+    {
+      name: "Free",
+      price: "Free",
+      bullets: [
+        "Manual item entry",
+        "Core collection, wishlist, consumed, and activity views",
+        "Starter Distinctions preview",
+        "Standouts preference picks",
+        "Export",
+      ],
+    },
+    {
+      name: "Collector",
+      price: "$7/month or $70/year",
+      bullets: [
+        "The Registry plus Group Pours in one membership",
+        "CellarTracker and CSV import",
+        "Consumed-history import",
+        "Add from photo",
+        "Hosted Group Pours tastings, rankings, and saved tasting history",
+        "Full Distinctions catalog and progress detail",
+        "Advanced import cleanup and dedupe tools",
+      ],
+    },
+  ],
+} as const;

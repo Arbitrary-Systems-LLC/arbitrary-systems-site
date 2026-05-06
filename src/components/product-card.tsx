@@ -27,7 +27,7 @@ export function ProductCard({ product, headingLevel = "h3" }: ProductCardProps) 
           {product.betaCtaLabel}
         </a>
         <Link href={`/products/${product.slug}`} className="button">
-          Learn More
+          {product.detailCtaLabel ?? "Learn More"}
         </Link>
       </div>
     </article>
