@@ -48,34 +48,36 @@ export default function RegistryPage() {
         </div>
 
         <div className="split-grid">
-          <div className="panel detail-feature-panel">
-            <h2 className="section-heading">{registryDetailSections[3].title}</h2>
-            <p>{registryDetailSections[3].body}</p>
-            <ul className="detail-list">
-              {registryDetailSections[3].bullets.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="panel detail-pricing-panel" id="collector">
-            <h2 className="section-heading">{registryPricing.title}</h2>
-            <p>{registryPricing.body}</p>
-            <div className="detail-pricing-grid">
-              {registryPricing.tiers.map((tier) => (
-                <div key={tier.name} className="detail-pricing-tier">
-                  <div className="detail-pricing-tier-head">
-                    <h3>{tier.name}</h3>
-                    <span>{tier.price}</span>
-                  </div>
-                  <ul className="detail-list">
-                    {tier.bullets.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+          {registryDetailSections.slice(3, 5).map((section) => (
+            <div key={section.title} className="panel detail-feature-panel">
+              <h2 className="section-heading">{section.title}</h2>
+              <p>{section.body}</p>
+              <ul className="detail-list">
+                {section.bullets.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
+          ))}
+        </div>
+
+        <div className="panel detail-pricing-panel" id="collector">
+          <h2 className="section-heading">{registryPricing.title}</h2>
+          <p>{registryPricing.body}</p>
+          <div className="detail-pricing-grid">
+            {registryPricing.tiers.map((tier) => (
+              <div key={tier.name} className="detail-pricing-tier">
+                <div className="detail-pricing-tier-head">
+                  <h3>{tier.name}</h3>
+                  <span>{tier.price}</span>
+                </div>
+                <ul className="detail-list">
+                  {tier.bullets.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </ProductDetailSections>

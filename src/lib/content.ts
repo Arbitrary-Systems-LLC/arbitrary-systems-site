@@ -4,7 +4,7 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Software for the work people still do carefully.",
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, and private plans between trusted people.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, and agent-ready workflows that respect the underlying record.",
 };
 
 export const capabilities = [
@@ -22,6 +22,11 @@ export const capabilities = [
     title: "Long-term product thinking",
     description:
       "The goal is not feature sprawl. It is software that becomes more trustworthy as collections grow, tastings get more involved, schedules get busier, and the surrounding operation becomes more demanding.",
+  },
+  {
+    title: "Agent-ready where it makes the work easier",
+    description:
+      "The useful AI surface is not generic content. It is trusted agents working against clear records, stable contracts, drafts, approvals, and audit trails so users can offload operational upkeep without losing control.",
   },
 ];
 
@@ -45,6 +50,11 @@ export const principles = [
     title: "Prefer reliability over theater",
     description:
       "Trust is earned through predictable workflows, accurate records, and careful defaults, not through louder interfaces or performative complexity.",
+  },
+  {
+    title: "Make agents useful, not decorative",
+    description:
+      "When AI agents enter the product surface, they should help with work the system is uniquely positioned to do: cleanup, preparation, reporting, review, and safe execution against the user's real data.",
   },
 ];
 
@@ -106,11 +116,11 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 1024,
     logoStyle: "mark",
     description:
-      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, and Group Pours into one collector profile.",
+      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, Group Pours, and a trusted agent-access roadmap into one collector profile.",
     overview:
       "The Registry is in beta for collectors who want one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
     direction:
-      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, category-specific metadata, consumed-history capture, tasting notes, Distinctions, Standouts, and a shared catalog that improves discovery without exposing private ownership details.",
+      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, category-specific metadata, consumed-history capture, tasting notes, Distinctions, Standouts, agent-readable contracts, and a shared catalog that improves discovery without exposing private ownership details.",
     promise:
       "The goal is to make a serious collection easier to maintain, easier to search, easier to taste from, and more meaningful as history accumulates.",
     bullets: [
@@ -119,6 +129,7 @@ export const products: Record<ProductKey, Product> = {
       "location, bin, quantity, bottle state, purchase history, and current value",
       "Group Pours connection for hosted tastings, rankings, polished notes, and saved tasting history",
       "Distinctions and Standouts that turn collection and tasting history into a living profile",
+      "trusted agent roadmap for draft-first upkeep, storage planning, reports, import cleanup, and tasting preparation",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
     ],
     preview: {
@@ -133,6 +144,7 @@ export const products: Record<ProductKey, Product> = {
         "Track what you own, where it lives, what it cost, and what needs attention next.",
         "Import CellarTracker and CSV files, including consumed-history exports that make Distinctions smarter.",
         "Collector includes Group Pours, so hosted tastings, rankings, and polished notes can become part of the same long-term profile.",
+        "Trusted agent access is planned around drafts, approvals, storage, cleanup, and reports instead of generic prompts.",
       ],
       footer: "wine • beer • spirits • cigars • Group Pours",
     },
@@ -322,6 +334,17 @@ export const registryDetailSections = [
       "Save tasting summaries and polished notes back to The Registry",
       "Use tasting history to feed Distinctions and future recommendations",
       "Keep inventory authority in The Registry with explicit consume confirmation",
+    ],
+  },
+  {
+    title: "Trusted agents should help with upkeep, not generic prompts.",
+    body:
+      "The agent-access roadmap focuses on workflows that Registry can do better than a general assistant because it owns the private record: search saved items, find data gaps, prepare drafts, propose storage moves, assemble reports, and prep tastings while keeping confirmation in the user's hands.",
+    bullets: [
+      "Read-only contracts first for saved items, storage maps, reports, put-away queues, and tasting history",
+      "Draft-first actions for import cleanup, item updates, storage moves, make-space plans, lifecycle events, and tasting drafts",
+      "Explicit confirmation before applying inventory, storage, account, billing, or lifecycle changes",
+      "Audit trails, stable resource links, schema versions, and retry-safe behavior before broader agent tooling",
     ],
   },
 ] as const;
