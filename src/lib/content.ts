@@ -167,33 +167,36 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 120,
     logoStyle: "wordmark",
     description:
-      "A studio management system built around scheduling, booking, waivers, waitlists, customer records, and payments, with simplicity and reliability leading the product direction.",
+      "A studio management system built around scheduling, booking, waivers, waitlists, customer records, and payments — with owner repair tools when things go sideways and a working AI-assistant integration for customers who want one.",
     overview:
       "PranaLogic is now in beta for yoga studios that need dependable day-to-day operations across classes, teachers, front-desk staff, customers, rooms, and locations.",
     direction:
-      "Its direction centers on the operational backbone of the studio: schedule management, booking and cancellation rules, waitlists, waivers, customer accounts, and billing-related workflows.",
+      "Its direction centers on the operational backbone of the studio — schedule management, recurrence at the cadence the studio actually runs, booking and cancellation rules, waitlists, waivers, customer accounts, and billing-related workflows — and on giving owners durable repair paths when something goes wrong at the desk.",
     promise:
-      "The goal is software that helps a studio run cleanly and confidently without adding administrative tension to the customer experience.",
+      "The goal is software that helps a studio run cleanly and confidently, fixes mistakes without drama when they happen, and meets customers where they increasingly are — including in their AI assistant.",
     bullets: [
-      "multi-location scheduling with rooms, teachers, recurring templates, and dated class instances",
-      "role-aware workflows for owners, staff, teachers, and customers",
+      "multi-location scheduling with rooms, teachers, and recurring class and workshop templates at any user-selected cadence (every week, every two weeks, every N weeks)",
+      "external registration links for offsite workshops so a studio can run a retreat or guest event without leaving its scheduling backbone",
+      "role-aware workflows for owners, staff, teachers, and customers, with per-section visibility and an emerging admin shell that brings the back-of-house surfaces together",
+      "owner repair tools — cancel a booking on behalf of a customer, void a wrong purchase, adjust credits, record past attendance for a class that was already taught — every action captured in a per-customer audit timeline",
+      "first studio platform with a working Model Context Protocol integration: a customer can mint a scoped key in one click and let Claude, ChatGPT, or any MCP-compatible assistant search classes, check credits, and book or cancel on their behalf, with a hard payment boundary (no headless purchases)",
       "booking, cancellation, waitlist, waiver, and intake flows designed around how studios actually operate",
       "a calmer alternative to cluttered studio software without sacrificing operational seriousness",
     ],
     preview: {
       eyebrow: "Studio day",
-      title: "Schedules, people, and waivers moving together.",
+      title: "Schedules, people, repair paths, and an AI surface — moving together.",
       stats: [
         { label: "Locations", value: "4 active" },
         { label: "Bookings", value: "112 today" },
-        { label: "Waitlist", value: "18 pending" },
+        { label: "AI keys", value: "scoped, revocable" },
       ],
       highlights: [
-        "Recurring schedules, rooms, and dated class instances stay tied to the real calendar.",
-        "Owners, desk staff, teachers, and customers each get the actions that fit their role.",
-        "Waivers, attendance, and booking rules sit close to the flow instead of becoming separate admin work.",
+        "Recurring schedules at the studio's real cadence, with offsite workshops able to link out to their own registration system.",
+        "Owners can undo and repair operational mistakes without an engineer in the loop — and every repair is logged.",
+        "Customers who want their assistant to handle bookings can connect it via MCP; the studio's records stay the source of truth.",
       ],
-      footer: "classes • staff • customers • payments",
+      footer: "classes • staff • customers • repair tools • AI access",
     },
   },
   imopen2: {

@@ -13,7 +13,7 @@ export const metadata = createMetadata({
 const signals = [
   "Collector software for wine, spirits, beer, and cigars",
   "Agent-ready collection workflows with drafts, approvals, and audit trails",
-  "Studio operations software for yoga and boutique fitness",
+  "Studio operations software for yoga and boutique fitness, with owner repair tools and a working AI-assistant integration",
   "Collaborative tasting software built around GPAT and live results",
   "Private, circle-based pulses and syncs for small real-world plans",
 ];
