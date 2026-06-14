@@ -392,7 +392,7 @@ ul.detail-list li::marker {
 }
 
 .product-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
   align-items: stretch;
 }
 
@@ -642,6 +642,36 @@ ul.detail-list li::marker {
   background: linear-gradient(135deg, rgba(196, 58, 85, 0.44), rgba(164, 46, 70, 0.32));
 }
 
+.product-card-lws-powerup {
+  border-color: rgba(245, 158, 11, 0.22);
+  background:
+    radial-gradient(circle at top, rgba(16, 185, 129, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(18, 28, 31, 0.96), rgba(11, 17, 21, 0.9));
+}
+
+.product-card-lws-powerup .product-eyebrow {
+  color: #fbbf24;
+}
+
+.product-card-lws-powerup .status-pill,
+.page-stack-lws-powerup .status-pill {
+  border-color: rgba(245, 158, 11, 0.32);
+  color: #fde68a;
+  background: rgba(92, 58, 7, 0.36);
+}
+
+.product-card-lws-powerup .button.primary,
+.page-stack-lws-powerup .button.primary {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.34), rgba(16, 185, 129, 0.22));
+  border-color: rgba(245, 158, 11, 0.34);
+}
+
+.product-card-lws-powerup .button.primary:hover,
+.page-stack-lws-powerup .button.primary:hover {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.42), rgba(16, 185, 129, 0.3));
+}
+
 .status-pill {
   display: inline-block;
   padding: 10px 16px;
@@ -685,6 +715,12 @@ ul.detail-list li::marker {
   background:
     radial-gradient(circle at top left, rgba(240, 143, 157, 0.14), transparent 24%),
     radial-gradient(circle at top right, rgba(196, 58, 85, 0.16), transparent 28%);
+}
+
+.page-hero-lws-powerup {
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.16), transparent 28%);
 }
 
 .page-stack {
@@ -801,6 +837,13 @@ ul.detail-list li::marker {
     linear-gradient(180deg, rgba(37, 23, 30, 0.94), rgba(24, 17, 21, 0.86));
 }
 
+.page-stack-lws-powerup .panel {
+  border-color: rgba(245, 158, 11, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(20, 29, 31, 0.94), rgba(11, 17, 21, 0.86));
+}
+
 .product-card-register .product-preview,
 .page-stack-register .product-preview:not(.product-preview-flat) {
   border-color: rgba(217, 198, 160, 0.2);
@@ -842,6 +885,17 @@ ul.detail-list li::marker {
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(180deg, rgba(31, 18, 23, 0.98), rgba(20, 13, 16, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.product-card-lws-powerup .product-preview,
+.page-stack-lws-powerup .product-preview:not(.product-preview-flat) {
+  border-color: rgba(245, 158, 11, 0.22);
+  background:
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.16), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(12, 22, 24, 0.98), rgba(7, 13, 17, 0.92));
   background-size: auto, 24px 24px, 24px 24px, auto;
 }
 
