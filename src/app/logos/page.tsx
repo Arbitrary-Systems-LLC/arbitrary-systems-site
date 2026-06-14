@@ -91,6 +91,16 @@ const logos = [
     tone: "wordmark" as const,
   },
   {
+    name: "LW:S - Power Up",
+    kind: "Product mark",
+    src: "/products/lws-powerup-logo.png",
+    downloadName: "lws-powerup-logo.png",
+    alt: "LW:S Power Up logo",
+    width: 1024,
+    height: 1024,
+    tone: "mark" as const,
+  },
+  {
     name: "Renaissance Yoga",
     kind: "Property mark",
     src: "/products/renaissance-yoga-logo.png",

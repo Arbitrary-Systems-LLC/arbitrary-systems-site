@@ -4,14 +4,14 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Software for the work people still do carefully.",
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, and agent-ready workflows that respect the underlying record.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, game-community intelligence, and agent-ready workflows that respect the underlying record.",
 };
 
 export const capabilities = [
   {
     title: "Software shaped by real workflows",
     description:
-      "The products start from concrete operating realities like collection records, storage locations, tasting flows, bookings, waivers, staff roles, circle privacy, and availability windows instead of generic SaaS patterns.",
+      "The products start from concrete operating realities like collection records, storage locations, tasting flows, bookings, waivers, staff roles, circle privacy, availability windows, alliance comparisons, and player snapshots instead of generic SaaS patterns.",
   },
   {
     title: "Calm surfaces with real depth",
@@ -21,7 +21,7 @@ export const capabilities = [
   {
     title: "Long-term product thinking",
     description:
-      "The goal is not feature sprawl. It is software that becomes more trustworthy as collections grow, tastings get more involved, schedules get busier, and the surrounding operation becomes more demanding.",
+      "The goal is not feature sprawl. It is software that becomes more trustworthy as collections grow, tastings get more involved, schedules get busier, communities get more data-rich, and the surrounding operation becomes more demanding.",
   },
   {
     title: "Agent-ready where it makes the work easier",
@@ -34,17 +34,17 @@ export const principles = [
   {
     title: "Model the work honestly",
     description:
-      "Good software should reflect the real structure of the job, whether that means bottle state and storage context, a live tasting workflow, waitlists and waivers, or the social shape of making plans with trusted people.",
+      "Good software should reflect the real structure of the job, whether that means bottle state and storage context, a live tasting workflow, waitlists and waivers, alliance stat comparisons, or the social shape of making plans with trusted people.",
   },
   {
     title: "Keep private details private",
     description:
-      "High-trust products need clear boundaries around what belongs to the shared system and what should remain personal, local, circle-scoped, or operator-only.",
+      "High-trust products need clear boundaries around what belongs to the shared system and what should remain personal, local, circle-scoped, alliance-scoped, or operator-only.",
   },
   {
     title: "Reduce routine friction",
     description:
-      "The products should remove friction from routine work and coordination so that collectors, studio teams, and everyday users spend less time fighting the software around the task.",
+      "The products should remove friction from routine work and coordination so that collectors, studio teams, players, and everyday users spend less time fighting the software around the task.",
   },
   {
     title: "Prefer reliability over theater",
@@ -97,7 +97,7 @@ export type Product = {
   preview: ProductPreview;
 };
 
-export type ProductKey = "register" | "pranalogic" | "imopen2" | "groupPours";
+export type ProductKey = "register" | "pranalogic" | "imopen2" | "groupPours" | "lwsPowerup";
 
 export const products: Record<ProductKey, Product> = {
   register: {
@@ -289,9 +289,64 @@ export const products: Record<ProductKey, Product> = {
       footer: "host flow • blind mode • live results",
     },
   },
+  lwsPowerup: {
+    name: "LW:S - Power Up",
+    slug: "lws-powerup",
+    eyebrow: "Alliance intelligence",
+    audience:
+      "Last War: Survival players and alliance leaders comparing manually entered Power, Tech, Production, Drone, and Overlord stats across alliance, server, and global scopes.",
+    status: "Beta",
+    appUrl: "https://www.lws-powerup.com",
+    betaCtaLabel: "Start Power Up",
+    contactCtaLabel: "Talk Game Tools",
+    detailCtaLabel: "See Companion",
+    logoSrc: "/products/lws-powerup-logo.png",
+    logoAlt: "LW:S Power Up logo",
+    logoWidth: 1024,
+    logoHeight: 1024,
+    logoStyle: "mark",
+    description:
+      "An independent companion for Last War: Survival that helps players compare Power, Tech, Production, Drone, and Overlord stats, run 1:1 scouting, and track growth without game-login access or automated scraping.",
+    overview:
+      "LW:S - Power Up is in beta for alliances that want a cleaner way to see where members are ahead or behind without rebuilding the same spreadsheet every week.",
+    direction:
+      "Its direction centers on manually entered snapshots, alliance/server/global visibility, reciprocal share-to-see privacy, 1:1 matchup analysis, growth history, and carefully decomposed Power, Tech, Production, Drone, and Overlord models.",
+    promise:
+      "The goal is to help players make smarter upgrade decisions, scout matchups more clearly, and give alliance leaders a shared picture of growth without asking anyone for game credentials.",
+    bullets: [
+      "manual stat snapshots for Power, Tech, Production, Drone, and Overlord screens",
+      "side-by-side comparison grids that show exactly where a player is ahead, behind, or even",
+      "1:1 matchup analysis for scouting rivals or understanding alliance gaps",
+      "growth tracking so players can see whether recent upgrades are moving the numbers that matter",
+      "alliance, server, and global visibility tiers with reciprocal share-to-see controls",
+      "one login can manage up to three game accounts with separate alliance and visibility settings",
+      "independent, unofficial companion tooling with no game login, no scraping, and no client automation",
+    ],
+    preview: {
+      eyebrow: "Alliance scout",
+      title: "Power, tech, production, Drone, and Overlord gaps in one view.",
+      stats: [
+        { label: "Scope", value: "Alliance" },
+        { label: "Compare", value: "1:1" },
+        { label: "Privacy", value: "share-to-see" },
+      ],
+      highlights: [
+        "Players enter their numbers by hand, then compare against their alliance, server, or opted-in global pool.",
+        "Comparison views make strong and weak spots visible without giving the app any game-account access.",
+        "1:1 scouting and growth history turn routine stat checks into a clearer upgrade plan.",
+      ],
+      footer: "Power • Tech • Production • Drone • Overlord",
+    },
+  },
 };
 
-export const featuredProducts = [products.register, products.pranalogic, products.imopen2, products.groupPours];
+export const featuredProducts = [
+  products.register,
+  products.pranalogic,
+  products.imopen2,
+  products.groupPours,
+  products.lwsPowerup,
+];
 
 export const registryDetailSections = [
   {

@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, and private plans between trusted people.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, and game-community intelligence.",
   path: "/",
 });
 
@@ -16,6 +16,7 @@ const signals = [
   "Studio operations software for yoga and boutique fitness, with owner repair tools and a working AI-assistant integration",
   "Collaborative tasting software built around GPAT and live results",
   "Private, circle-based pulses and syncs for small real-world plans",
+  "Alliance intelligence for Last War: Survival players comparing stats, growth, and matchups",
 ];
 
 export default function HomePage() {
@@ -27,10 +28,10 @@ export default function HomePage() {
             <div className="eyebrow">Arbitrary Systems</div>
             <h1>Software for the work people still do carefully.</h1>
             <p className="hero-intro">
-              Arbitrary Systems builds beta products for serious collections, studio operations, collaborative tastings, and private plans between trusted people.
+              Arbitrary Systems builds beta products for serious collections, studio operations, collaborative tastings, private plans between trusted people, and game communities that need clearer shared data.
             </p>
             <p className="hero-secondary">
-              Each product starts with a real workflow and a real operating rhythm, with enough structure underneath to stay useful once the records, schedules, pours, or plans become part of ordinary life.
+              Each product starts with a real workflow and a real operating rhythm, with enough structure underneath to stay useful once the records, schedules, pours, plans, or comparisons become part of ordinary life.
             </p>
             <div className="button-row">
               <Link href="/products" className="button primary">
@@ -72,7 +73,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>Four beta products with live links: The Registry, PranaLogic, Group Pours, and I&apos;m open 2.</p>
+            <p>Five beta products with live links: The Registry, PranaLogic, I&apos;m open 2, Group Pours, and LW:S - Power Up.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -87,7 +88,7 @@ export default function HomePage() {
             <div className="eyebrow">What we build toward</div>
             <h2 className="section-heading">Software that understands the work underneath it.</h2>
             <p className="section-intro">
-              Arbitrary Systems is less interested in generic SaaS than in products that honestly model the job: collection stewardship, studio operations, or the quiet logistics of making plans with people you trust. The work favors durable systems that stay clear as the detail level rises.
+              Arbitrary Systems is less interested in generic SaaS than in products that honestly model the job: collection stewardship, studio operations, guided tastings, quiet planning with people you trust, or alliance intelligence for players working from shared stats. The work favors durable systems that stay clear as the detail level rises.
             </p>
           </div>
           <div className="card-grid">
@@ -105,9 +106,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">Current product work</div>
-            <h2 className="section-heading">Four beta products, each with a real job to do.</h2>
+            <h2 className="section-heading">Five beta products, each with a real job to do.</h2>
             <p className="section-intro narrow-copy">
-              Each product grows from an active codebase and a concrete domain model, not just a concept. The visual glimpses below are meant to show the kind of work each product is built to hold: collector records, live studio operations, tasting sessions, and private planning between trusted people.
+              Each product grows from an active codebase and a concrete domain model, not just a concept. The visual glimpses below are meant to show the kind of work each product is built to hold: collector records, live studio operations, tasting sessions, private planning, and alliance comparison data.
             </p>
           </div>
           <div className="product-grid">
@@ -141,7 +142,7 @@ export default function HomePage() {
             <div className="eyebrow">Get in touch</div>
             <h2 className="section-heading">If you are close to any of these domains, we should talk.</h2>
             <p className="section-intro narrow-copy">
-              {company.name} maintains this site as a company presence and contact point for collectors, studio operators, tasting hosts, community builders, collaborators, and other early product conversations.
+              {company.name} maintains this site as a company presence and contact point for collectors, studio operators, tasting hosts, community builders, game-community tool users, collaborators, and other early product conversations.
             </p>
           </div>
           <div className="button-row">
