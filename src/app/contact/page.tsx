@@ -9,7 +9,7 @@ export const metadata = createMetadata({
 
 const inquiryTopics = [
   "Which product or company topic your note relates to",
-  "Whether you are a collector, studio operator, tasting host, player, alliance leader, collaborator, or something else",
+  "Whether you are a collector, studio operator, wine or cigar tasting host, player, alliance leader, collaborator, or something else",
   "The workflow, problem, or opportunity you want to discuss",
   "Any current tools or constraints that matter",
   "Your timeline or stage, if relevant",
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 .
               </p>
               <p>
-                If your note relates to The Registry, PranaLogic, I&apos;m open 2, Group Pours, or LW:S - Power Up, mention the product in the subject line so the conversation starts in the right place.
+                If your note relates to The Registry, PranaLogic, I&apos;m open 2, Group Pours, Group Draws, or LW:S - Power Up, mention the product in the subject line so the conversation starts in the right place.
               </p>
             </div>
             <div className="panel">

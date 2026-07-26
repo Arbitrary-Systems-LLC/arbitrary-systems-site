@@ -642,6 +642,35 @@ ul.detail-list li::marker {
   background: linear-gradient(135deg, rgba(196, 58, 85, 0.44), rgba(164, 46, 70, 0.32));
 }
 
+.product-card-group-draws {
+  border-color: rgba(217, 168, 103, 0.22);
+  background:
+    radial-gradient(circle at top, rgba(217, 168, 103, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(32, 29, 25, 0.96), rgba(19, 20, 21, 0.9));
+}
+
+.product-card-group-draws .product-eyebrow {
+  color: #f4d29a;
+}
+
+.product-card-group-draws .status-pill,
+.page-stack-group-draws .status-pill {
+  border-color: rgba(217, 168, 103, 0.3);
+  color: #f4d29a;
+  background: rgba(70, 46, 23, 0.42);
+}
+
+.product-card-group-draws .button.primary,
+.page-stack-group-draws .button.primary {
+  background: linear-gradient(135deg, rgba(217, 168, 103, 0.36), rgba(205, 138, 90, 0.26));
+  border-color: rgba(217, 168, 103, 0.32);
+}
+
+.product-card-group-draws .button.primary:hover,
+.page-stack-group-draws .button.primary:hover {
+  background: linear-gradient(135deg, rgba(217, 168, 103, 0.44), rgba(205, 138, 90, 0.34));
+}
+
 .product-card-lws-powerup {
   border-color: rgba(245, 158, 11, 0.22);
   background:
@@ -715,6 +744,12 @@ ul.detail-list li::marker {
   background:
     radial-gradient(circle at top left, rgba(240, 143, 157, 0.14), transparent 24%),
     radial-gradient(circle at top right, rgba(196, 58, 85, 0.16), transparent 28%);
+}
+
+.page-hero-group-draws {
+  background:
+    radial-gradient(circle at top left, rgba(217, 168, 103, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(205, 138, 90, 0.16), transparent 28%);
 }
 
 .page-hero-lws-powerup {
@@ -837,6 +872,13 @@ ul.detail-list li::marker {
     linear-gradient(180deg, rgba(37, 23, 30, 0.94), rgba(24, 17, 21, 0.86));
 }
 
+.page-stack-group-draws .panel {
+  border-color: rgba(217, 168, 103, 0.18);
+  background:
+    radial-gradient(circle at top left, rgba(217, 168, 103, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(32, 29, 25, 0.94), rgba(19, 20, 21, 0.86));
+}
+
 .page-stack-lws-powerup .panel {
   border-color: rgba(245, 158, 11, 0.18);
   background:
@@ -885,6 +927,17 @@ ul.detail-list li::marker {
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(180deg, rgba(31, 18, 23, 0.98), rgba(20, 13, 16, 0.92));
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.product-card-group-draws .product-preview,
+.page-stack-group-draws .product-preview:not(.product-preview-flat) {
+  border-color: rgba(217, 168, 103, 0.22);
+  background:
+    radial-gradient(circle at top right, rgba(217, 168, 103, 0.16), transparent 38%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(25, 22, 19, 0.98), rgba(15, 15, 16, 0.92));
   background-size: auto, 24px 24px, 24px 24px, auto;
 }
 

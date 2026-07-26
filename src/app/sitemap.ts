@@ -9,6 +9,7 @@ const routes = [
   "/products/the-registry",
   "/products/pranalogic",
   "/products/group-pours",
+  "/products/group-draws",
   "/products/imopen2",
   "/products/lws-powerup",
   "/support",

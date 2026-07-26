@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, and game-community intelligence.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative wine and cigar tastings, private plans between trusted people, and game-community intelligence.",
   path: "/",
 });
 
@@ -14,7 +14,7 @@ const signals = [
   "Collector software for wine, spirits, beer, and cigars",
   "Agent-ready collection workflows with drafts, approvals, and audit trails",
   "Studio operations software for yoga and boutique fitness, with owner repair tools and a working AI-assistant integration",
-  "Collaborative tasting software built around GPAT and live results",
+  "Collaborative wine and cigar tasting software built around GPAT, GDAT, and live results",
   "Private, circle-based pulses and syncs for small real-world plans",
   "Alliance intelligence for Last War: Survival players comparing stats, growth, and matchups",
 ];
@@ -28,7 +28,7 @@ export default function HomePage() {
             <div className="eyebrow">Arbitrary Systems</div>
             <h1>Software for the work people still do carefully.</h1>
             <p className="hero-intro">
-              Arbitrary Systems builds beta products for serious collections, studio operations, collaborative tastings, private plans between trusted people, and game communities that need clearer shared data.
+              Arbitrary Systems builds beta products for serious collections, studio operations, collaborative wine and cigar tastings, private plans between trusted people, and game communities that need clearer shared data.
             </p>
             <p className="hero-secondary">
               Each product starts with a real workflow and a real operating rhythm, with enough structure underneath to stay useful once the records, schedules, pours, plans, or comparisons become part of ordinary life.
@@ -73,7 +73,7 @@ export default function HomePage() {
           </div>
           <div className="signal-card">
             <span className="signal-label">Current scope</span>
-            <p>Five beta products with live links: The Registry, PranaLogic, I&apos;m open 2, Group Pours, and LW:S - Power Up.</p>
+            <p>Six beta products with live links: The Registry, PranaLogic, I&apos;m open 2, Group Pours, Group Draws, and LW:S - Power Up.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -106,9 +106,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading-group">
             <div className="eyebrow">Current product work</div>
-            <h2 className="section-heading">Five beta products, each with a real job to do.</h2>
+            <h2 className="section-heading">Six beta products, each with a real job to do.</h2>
             <p className="section-intro narrow-copy">
-              Each product grows from an active codebase and a concrete domain model, not just a concept. The visual glimpses below are meant to show the kind of work each product is built to hold: collector records, live studio operations, tasting sessions, private planning, and alliance comparison data.
+              Each product grows from an active codebase and a concrete domain model, not just a concept. The visual glimpses below are meant to show the kind of work each product is built to hold: collector records, live studio operations, wine and cigar tasting sessions, private planning, and alliance comparison data.
             </p>
           </div>
           <div className="product-grid">

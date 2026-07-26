@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Support",
   description:
-    "Support information for Arbitrary Systems products, including The Registry, PranaLogic, I'm open 2, Group Pours, and LW:S - Power Up.",
+    "Support information for Arbitrary Systems products, including The Registry, PranaLogic, I'm open 2, Group Pours, Group Draws, and LW:S - Power Up.",
   path: "/support",
 });
 
@@ -17,7 +17,7 @@ export default function SupportPage() {
           <div className="eyebrow">Support</div>
           <h1>Support and service inquiries.</h1>
           <p>
-            This page serves as the company-level contact point for product support, service questions, and other operational issues related to The Registry, PranaLogic, I&apos;m open 2, Group Pours, and LW:S - Power Up.
+            This page serves as the company-level contact point for product support, service questions, and other operational issues related to The Registry, PranaLogic, I&apos;m open 2, Group Pours, Group Draws, and LW:S - Power Up.
           </p>
         </div>
       </section>
@@ -46,9 +46,9 @@ export default function SupportPage() {
           <div className="panel">
             <h2 className="section-heading">Before you send a note</h2>
             <ul className="detail-list">
-              <li>Indicate whether the message concerns The Registry, PranaLogic, I&apos;m open 2, Group Pours, LW:S - Power Up, or a general company matter.</li>
+              <li>Indicate whether the message concerns The Registry, PranaLogic, I&apos;m open 2, Group Pours, Group Draws, LW:S - Power Up, or a general company matter.</li>
               <li>Describe the exact issue, question, or request as directly as possible.</li>
-              <li>Include screenshots, reproduction steps, and any relevant account, collection, tasting, circle, studio, alliance, or player context.</li>
+              <li>Include screenshots, reproduction steps, and any relevant account, collection, tasting, circle, studio, alliance, cigar, or player context.</li>
             </ul>
             <div className="button-row">
               <Link href="/contact" className="button primary">

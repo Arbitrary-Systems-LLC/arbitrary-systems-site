@@ -4,14 +4,14 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Software for the work people still do carefully.",
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings, private plans between trusted people, game-community intelligence, and agent-ready workflows that respect the underlying record.",
+    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings across wine and cigars, private plans between trusted people, game-community intelligence, and agent-ready workflows that respect the underlying record.",
 };
 
 export const capabilities = [
   {
     title: "Software shaped by real workflows",
     description:
-      "The products start from concrete operating realities like collection records, storage locations, tasting flows, bookings, waivers, staff roles, circle privacy, availability windows, alliance comparisons, and player snapshots instead of generic SaaS patterns.",
+      "The products start from concrete operating realities like collection records, storage locations, wine and cigar tasting flows, bookings, waivers, staff roles, circle privacy, availability windows, alliance comparisons, and player snapshots instead of generic SaaS patterns.",
   },
   {
     title: "Calm surfaces with real depth",
@@ -97,7 +97,7 @@ export type Product = {
   preview: ProductPreview;
 };
 
-export type ProductKey = "register" | "pranalogic" | "imopen2" | "groupPours" | "lwsPowerup";
+export type ProductKey = "register" | "pranalogic" | "imopen2" | "groupPours" | "groupDraws" | "lwsPowerup";
 
 export const products: Record<ProductKey, Product> = {
   register: {
@@ -116,7 +116,7 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 1024,
     logoStyle: "mark",
     description:
-      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, Group Pours, and a trusted agent-access roadmap into one collector profile.",
+      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, Group Pours, Group Draws, and a trusted agent-access roadmap into one collector profile.",
     overview:
       "The Registry is in beta for collectors who want one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
     direction:
@@ -127,7 +127,7 @@ export const products: Record<ProductKey, Product> = {
       "multi-category records for wine, beer, spirits, and cigars",
       "CellarTracker and CSV import, including consumed-history files",
       "location, bin, quantity, bottle state, purchase history, and current value",
-      "Group Pours connection for hosted tastings, rankings, polished notes, and saved tasting history",
+      "Group Pours and Group Draws connections for hosted tastings, rankings, polished notes, and saved tasting history",
       "Distinctions and Standouts that turn collection and tasting history into a living profile",
       "trusted agent roadmap for draft-first upkeep, storage planning, reports, import cleanup, and tasting preparation",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
@@ -143,10 +143,10 @@ export const products: Record<ProductKey, Product> = {
       highlights: [
         "Track what you own, where it lives, what it cost, and what needs attention next.",
         "Import CellarTracker and CSV files, including consumed-history exports that make Distinctions smarter.",
-        "Collector includes Group Pours, so hosted tastings, rankings, and polished notes can become part of the same long-term profile.",
+        "Collector connects to Group Pours and Group Draws, so hosted tastings, rankings, and polished notes can become part of the same long-term profile.",
         "Trusted agent access is planned around drafts, approvals, storage, cleanup, and reports instead of generic prompts.",
       ],
-      footer: "wine • beer • spirits • cigars • Group Pours",
+      footer: "wine • beer • spirits • cigars • Group Pours • Group Draws",
     },
   },
   pranalogic: {
@@ -289,6 +289,53 @@ export const products: Record<ProductKey, Product> = {
       footer: "host flow • blind mode • live results",
     },
   },
+  groupDraws: {
+    name: "Group Draws",
+    slug: "group-draws",
+    eyebrow: "Collaborative cigar tasting",
+    audience: "Hosts and tasters running cigar flights, herfs, blind tastings, club nights, or private solo cigar notes.",
+    status: "Beta",
+    appUrl: "https://www.groupdraws.com",
+    betaCtaLabel: "Host a Tasting",
+    contactCtaLabel: "Talk Cigar Tastings",
+    logoSrc: "/products/group-draws-wordmark.png",
+    logoAlt: "Group Draws wordmark",
+    logoWidth: 720,
+    logoHeight: 350,
+    logoStyle: "wordmark",
+    description:
+      "A collaborative cigar tasting app built around GDAT, helping hosts run cigar flights while tasters join by code or QR, capture notes across the thirds, and share live group results.",
+    overview:
+      "Group Draws is live for cigar tasting hosts who want the structure of a serious tasting sheet without turning a herf, lounge night, or solo review into paperwork.",
+    direction:
+      "Its direction centers on GDAT — the Group Draws Approach to Tasting — with cold-draw capture, construction and burn reads, flavor across the first, second, and final thirds, optional blind mode, guess-the-cigar fields, live aggregate dashboards, and polished notes that can flow back to The Registry.",
+    promise:
+      "The goal is to make cigar tasting easier to host, easier to join, and easier to remember, while keeping Group Draws aligned with Group Pours and The Registry as one broader tasting ecosystem.",
+    bullets: [
+      "host-led cigar flights with one or more cigars, optional blind mode, and live session control",
+      "join-by-code and QR workflows that let tasters move straight into the GDAT sheet from a phone",
+      "structured cigar notes across cold draw, performance, thirds, retrohale, finish, and final impressions",
+      "live flavor clouds, construction reads, rankings, and shareable group recaps",
+      "solo tasting mode for private cigar notes without a share code",
+      "AI-polished tasting notes for individual tasters and group recaps",
+      "Registry handoff support so saved humidor cigars can enter a tasting and notes can return to the collector record",
+    ],
+    preview: {
+      eyebrow: "Cigar flight",
+      title: "GDAT notes, live flavor clouds, and cigar results while the room is smoking.",
+      stats: [
+        { label: "Cigars", value: "4 in flight" },
+        { label: "Tasters", value: "6 joined" },
+        { label: "Blind", value: "optional" },
+      ],
+      highlights: [
+        "Hosts add cigars, share a code or QR, and watch notes arrive as tasters work through the flight.",
+        "GDAT captures cold draw, construction, burn, flavor across thirds, retrohale, and final impressions.",
+        "Blind mode, rankings, polished notes, and Registry handoffs turn a cigar night into a lasting record.",
+      ],
+      footer: "GDAT • cigar flights • blind mode • Registry notes",
+    },
+  },
   lwsPowerup: {
     name: "LW:S - Power Up",
     slug: "lws-powerup",
@@ -345,6 +392,7 @@ export const featuredProducts = [
   products.pranalogic,
   products.imopen2,
   products.groupPours,
+  products.groupDraws,
   products.lwsPowerup,
 ];
 
@@ -384,11 +432,12 @@ export const registryDetailSections = [
     ],
   },
   {
-    title: "The tasting happens in Group Pours. The history lives in The Registry.",
+    title: "The tasting happens in Group Pours and Group Draws. The history lives in The Registry.",
     body:
-      "Collector includes Group Pours. Start a tasting from bottles in The Registry, host it in Group Pours, then save rankings, polished notes, and tasting summaries back to the collector profile. Inventory changes still require explicit confirmation, so hosting a tasting never silently consumes bottles.",
+      "Collector connects to Group Pours and Group Draws. Start a wine tasting from bottles in The Registry or a cigar tasting from the humidor, host it in the right tasting app, then save rankings, polished notes, and summaries back to the collector profile. Inventory changes still require explicit confirmation, so hosting a tasting never silently consumes bottles or cigars.",
     bullets: [
       "Open selected Registry wines directly in a Group Pours hosted tasting",
+      "Open selected Registry cigars directly in a Group Draws hosted or solo tasting",
       "Save tasting summaries and polished notes back to The Registry",
       "Use tasting history to feed Distinctions and future recommendations",
       "Keep inventory authority in The Registry with explicit consume confirmation",
@@ -410,7 +459,7 @@ export const registryDetailSections = [
 export const registryPricing = {
   title: "Free to begin. Collector when it becomes home.",
   body:
-    "Free is useful by design for manual tracking and getting comfortable with the registry model. Collector is $7/month or $70/year and includes The Registry plus Group Pours.",
+    "Free is useful by design for manual tracking and getting comfortable with the registry model. Collector is $7/month or $70/year and includes The Registry plus Group Pours and Group Draws.",
   tiers: [
     {
       name: "Free",
@@ -427,11 +476,11 @@ export const registryPricing = {
       name: "Collector",
       price: "$7/month or $70/year",
       bullets: [
-        "The Registry plus Group Pours in one membership",
+        "The Registry plus Group Pours and Group Draws in one membership",
         "CellarTracker and CSV import",
         "Consumed-history import",
         "Add from photo",
-        "Hosted Group Pours tastings, rankings, and saved tasting history",
+        "Hosted Group Pours and Group Draws tastings, rankings, and saved tasting history",
         "Full Distinctions catalog and progress detail",
         "Advanced import cleanup and dedupe tools",
       ],
