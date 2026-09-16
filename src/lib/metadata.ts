@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { company } from "@/lib/content";
 
-export const siteUrl = new URL(company.domain);
+// Match the production host; the apex redirects here.
+export const siteUrl = new URL("https://www.arbitrarysystems.io");
 export const defaultOgImage = "/branding/logo-mark.png";
 
 type PageMetadataInput = {

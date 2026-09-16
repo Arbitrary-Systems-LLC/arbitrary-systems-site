@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: company.name,
     description: company.description,
-    url: company.domain,
+    url: siteUrl.toString(),
     siteName: company.name,
     type: "website",
     locale: "en_US",
@@ -76,8 +76,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: company.name,
-  url: company.domain,
-  logo: `${company.domain}/branding/logo-mark.png`,
+  url: siteUrl.toString(),
+  logo: new URL("/branding/logo-mark.png", siteUrl).toString(),
   email: company.email,
   description: company.description,
 };
