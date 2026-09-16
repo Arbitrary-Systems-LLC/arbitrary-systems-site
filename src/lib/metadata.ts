@@ -15,7 +15,7 @@ export function createMetadata({ title, description, path = "/" }: PageMetadataI
   const canonical = new URL(path, siteUrl).toString();
 
   return {
-    title,
+    ...(title ? { title } : {}),
     description,
     alternates: {
       canonical,
