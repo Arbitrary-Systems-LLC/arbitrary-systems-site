@@ -179,7 +179,7 @@ export const products: Record<ProductKey, Product> = {
       "external registration links for offsite workshops so a studio can run a retreat or guest event without leaving its scheduling backbone",
       "role-aware workflows for owners, staff, teachers, and customers, with per-section visibility and one admin console for the back of house",
       "owner repair tools — cancel a booking on behalf of a customer, void a wrong purchase, adjust credits, record past attendance for a class that was already taught — every action captured in a per-customer audit timeline",
-      "first studio platform with a working Model Context Protocol integration: a customer can mint a scoped key in one click and let Claude, ChatGPT, or any MCP-compatible assistant search classes, check credits, and book or cancel on their behalf, with a hard payment boundary (no headless purchases)",
+      "a working Model Context Protocol integration: a customer can mint a scoped key in one click and let Claude, ChatGPT, or any MCP-compatible assistant search classes, check credits, and book or cancel on their behalf, with a hard payment boundary (no headless purchases)",
       "booking, cancellation, waitlist, waiver, and intake flows designed around how studios actually operate, with email and text reminders timed before the free-cancel cutoff",
       "private sessions with pay-upfront or pay-after-session options, a configurable late-cancel fee, and pay-after-session no-shows charged the session price",
       "memberships, class packs, drop-ins, tips, and merch at the desk or online, paid through Stripe with sales tax calculated at checkout",
