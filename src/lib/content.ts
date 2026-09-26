@@ -4,7 +4,7 @@ export const company = {
   email: "hello@arbitrarysystems.io",
   tagline: "Software for the work people still do carefully.",
   description:
-    "Arbitrary Systems builds beta software for serious collections, studio operations, collaborative tastings across wine and cigars, private plans between trusted people, game-community intelligence, and agent-ready workflows that respect the underlying record.",
+    "Arbitrary Systems builds focused software for serious collections, studio operations, wine, beer, spirits, and cigar tastings, private plans between trusted people, game-community intelligence, and agent-ready workflows that respect the underlying record.",
 };
 
 export const capabilities = [
@@ -76,9 +76,10 @@ export type Product = {
   slug: string;
   eyebrow: string;
   audience: string;
-  status: string;
   appUrl: string;
-  betaCtaLabel: string;
+  appCtaLabel: string;
+  appStoreUrl?: string;
+  releaseNote?: string;
   contactCtaLabel: string;
   detailCtaLabel?: string;
   logoIconSrc?: string;
@@ -105,9 +106,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "the-registry",
     eyebrow: "Collector intelligence",
     audience: "Private collectors, households, and tasting-minded enthusiasts managing wine, beer, spirits, and cigar collections.",
-    status: "Beta",
     appUrl: "https://www.the-registry.net",
-    betaCtaLabel: "Start The Registry",
+    appCtaLabel: "Open The Registry",
     contactCtaLabel: "Talk Collections",
     detailCtaLabel: "See Collector",
     logoSrc: "/products/the-registry-logo.png",
@@ -116,11 +116,11 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 1024,
     logoStyle: "mark",
     description:
-      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, Group Pours, Group Draws, and a trusted agent-access roadmap into one collector profile.",
+      "A private registry for wine, beer, spirits, and cigars that connects inventory, imports, tasting history, Distinctions, and Group Pours and Group Draws in one collector profile.",
     overview:
-      "The Registry is in beta for collectors who want one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
+      "The Registry gives collectors one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
     direction:
-      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, category-specific metadata, consumed-history capture, tasting notes, Distinctions, Standouts, agent-readable contracts, and a shared catalog that improves discovery without exposing private ownership details.",
+      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, consumed-history capture, Distinctions, Standouts, a shared catalog, and scoped agent access with human-reviewed changes.",
     promise:
       "The goal is to make a serious collection easier to maintain, easier to search, easier to taste from, and more meaningful as history accumulates.",
     bullets: [
@@ -129,7 +129,7 @@ export const products: Record<ProductKey, Product> = {
       "location, bin, quantity, bottle state, purchase history, and current value",
       "Group Pours and Group Draws connections for hosted tastings, rankings, polished notes, and saved tasting history",
       "Distinctions and Standouts that turn collection and tasting history into a living profile",
-      "trusted agent roadmap for draft-first upkeep, storage planning, reports, import cleanup, and tasting preparation",
+      "scoped agent access for reading records and preparing human-reviewed collection updates",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
     ],
     preview: {
@@ -144,7 +144,7 @@ export const products: Record<ProductKey, Product> = {
         "Track what you own, where it lives, what it cost, and what needs attention next.",
         "Import CellarTracker and CSV files, including consumed-history exports that make Distinctions smarter.",
         "Collector connects to Group Pours and Group Draws, so hosted tastings, rankings, and polished notes can become part of the same long-term profile.",
-        "Trusted agent access is planned around drafts, approvals, storage, cleanup, and reports instead of generic prompts.",
+        "Scoped agent access can read collection records and prepare proposals for review before changes are applied.",
       ],
       footer: "wine • beer • spirits • cigars • Group Pours • Group Draws",
     },
@@ -153,10 +153,9 @@ export const products: Record<ProductKey, Product> = {
     name: "PranaLogic",
     slug: "pranalogic",
     eyebrow: "Studio operating system",
-    audience: "Yoga studios and boutique fitness businesses managing classes, staff, customers, and one or more locations.",
-    status: "Beta",
+    audience: "Yoga and fitness studios, independent trainers, teachers, and their customers.",
     appUrl: "https://www.prana-logic.com",
-    betaCtaLabel: "See Studio Beta",
+    appCtaLabel: "Open PranaLogic",
     contactCtaLabel: "Talk Studio Ops",
     logoIconSrc: "/products/pranalogic-mark.png",
     logoIconWidth: 1920,
@@ -167,11 +166,11 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 120,
     logoStyle: "wordmark",
     description:
-      "A studio management system built around scheduling, booking, waivers, waitlists, customer records, and payments — with owner repair tools when things go sideways and a working AI-assistant integration for customers who want one.",
+      "Bookings, memberships, payments, and studio operations for yoga and fitness studios and trainers, with owner repair tools and optional AI-assistant access for customers.",
     overview:
-      "PranaLogic is now in beta for yoga studios that need dependable day-to-day operations across classes, teachers, front-desk staff, customers, rooms, and locations.",
+      "PranaLogic gives studios and trainers one place for group classes, private sessions, memberships, customers, staff, rooms, and locations.",
     direction:
-      "Its direction centers on the operational backbone of the studio — schedule management, recurrence at the cadence the studio actually runs, booking and cancellation rules, waitlists, waivers, customer accounts, and billing-related workflows — and on giving owners durable repair paths when something goes wrong at the desk.",
+      "Its operational backbone covers recurring schedules, class and private-session booking, cancellations, waitlists, waivers, memberships, payments, and owner repair paths when something goes wrong at the desk.",
     promise:
       "The goal is software that helps a studio run cleanly and confidently, fixes mistakes without drama when they happen, and meets customers where they increasingly are — including in their AI assistant.",
     bullets: [
@@ -204,9 +203,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "imopen2",
     eyebrow: "Private social planning",
     audience: "People making low-pressure real-world plans with trusted circles of friends, family, dates, or community.",
-    status: "Beta",
     appUrl: "https://www.imopen2.com",
-    betaCtaLabel: "Start free",
+    appCtaLabel: "Start Free",
     contactCtaLabel: "Talk private planning",
     logoSrc: "/products/imopen2-logo.png",
     logoAlt: "I'm open 2 logo",
@@ -216,7 +214,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       'A private, circle-based planning app for turning "we should hang out" into real plans, without public feeds, group-chat pressure, or an algorithm deciding what matters.',
     overview:
-      "I'm open 2 is in beta for people who want a calmer way to say what they are open 2 without broadcasting themselves to everyone they know or starting another group-chat negotiation.",
+      "I'm open 2 gives people a calmer way to say what they are open 2 without broadcasting themselves to everyone they know or starting another group-chat negotiation.",
     direction:
       "Its direction centers on private circles, expiring Pulses, natural Echo language, quiet declines, Social Pulse controls, and pulser-controlled Sync creation so useful overlap can surface without turning attention into a performance.",
     promise:
@@ -249,10 +247,11 @@ export const products: Record<ProductKey, Product> = {
     name: "Group Pours",
     slug: "group-pours",
     eyebrow: "Collaborative tasting",
-    audience: "Hosts and tasters running guided, blind, or social wine tastings together.",
-    status: "Beta",
+    audience: "Hosts and tasters sharing wine, beer, or spirits flights, plus people keeping their own tasting notes.",
     appUrl: "https://www.grouppours.com",
-    betaCtaLabel: "Start Tasting Beta",
+    appCtaLabel: "Host a Tasting",
+    appStoreUrl: "https://apps.apple.com/us/app/group-pours/id6806579662",
+    releaseNote: "Available for iPhone and iPad on the App Store. Android is awaiting Google Play approval.",
     contactCtaLabel: "Talk Tastings",
     logoSrc: "/products/group-pours-wordmark.png",
     logoAlt: "Group Pours wordmark",
@@ -260,33 +259,34 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 297,
     logoStyle: "wordmark",
     description:
-      "A collaborative wine tasting app built around GPAT, helping hosts run structured tastings while tasters join by code, record notes, and contribute to live shared results.",
+      "A shared tasting app for wine, beer, and spirits. Hosts run a flight, tasters join by code, and everyone can keep structured notes and revisit the group result.",
     overview:
-      "Group Pours is now in beta for tasting hosts who want a cleaner way to run one or more wines, optionally keep bottles blind, and gather everyone into the same tasting flow without paper chaos.",
+      "Group Pours helps hosts run a wine, beer, or spirits tasting and gives each guest a clear path from first impression to saved note and group recap. Solo tasting is there when you want to keep a record on your own.",
     direction:
-      "Its direction centers on host-led tasting sessions, share codes and QR joins, GPAT-driven note capture, blind tasting support, and live aggregate views that get more useful as the room fills in responses.",
+      "Hosts can share a room code, keep a flight blind, and reveal bottles when the group is ready. Tasters can use a quick or detailed path, with guided wine prompts if they want help; photos, rankings, polished notes, and saved history make the tasting useful afterward.",
     promise:
       "The goal is to make group tasting easier to host, easier to join, and more rewarding to revisit after the pours are over.",
     bullets: [
-      "host-led tastings with one or more wines, optional blind mode, and live session control",
+      "host-led wine, beer, and spirits flights with optional blind mode",
       "join-by-code or QR workflows that let tasters move straight into note capture",
-      "structured GPAT sheets, real-time aggregate feedback, and shareable group results",
+      "quick and detailed tasting paths, guided wine prompts, photos, and rankings",
+      "solo notes, live group results, polished recaps, and saved tasting history",
       "a natural bridge between collaborative tasting and a deeper personal collection record in The Registry",
     ],
     preview: {
       eyebrow: "Tasting room",
-      title: "Shared notes and GPAT results while the pours are live.",
+      title: "Notes, rankings, and group results while the pours are live.",
       stats: [
         { label: "Tasters", value: "12 joined" },
         { label: "Wines", value: "6 poured" },
         { label: "Blind", value: "on" },
       ],
       highlights: [
-        "Hosts run the room while tasters join by code or QR and move straight into structured note capture.",
+        "Hosts run a wine, beer, or spirits flight while tasters join by code or QR.",
         "Blind flights stay hidden until the right moment, with reveal and control still in the host's hands.",
-        "Aggregate notes keep getting more useful as the group fills in the tasting together.",
+        "Guided or standard notes, photos, rankings, and a group recap make the tasting worth revisiting.",
       ],
-      footer: "host flow • blind mode • live results",
+      footer: "wine • beer • spirits • solo notes • live results",
     },
   },
   groupDraws: {
@@ -294,9 +294,8 @@ export const products: Record<ProductKey, Product> = {
     slug: "group-draws",
     eyebrow: "Collaborative cigar tasting",
     audience: "Hosts and tasters running cigar flights, herfs, blind tastings, club nights, or private solo cigar notes.",
-    status: "Beta",
     appUrl: "https://www.groupdraws.com",
-    betaCtaLabel: "Host a Tasting",
+    appCtaLabel: "Host a Tasting",
     contactCtaLabel: "Talk Cigar Tastings",
     logoSrc: "/products/group-draws-wordmark.png",
     logoAlt: "Group Draws wordmark",
@@ -306,7 +305,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "A collaborative cigar tasting app built around GDAT, helping hosts run cigar flights while tasters join by code or QR, capture notes across the thirds, and share live group results.",
     overview:
-      "Group Draws is live for cigar tasting hosts who want the structure of a serious tasting sheet without turning a herf, lounge night, or solo review into paperwork.",
+      "Group Draws gives cigar tasting hosts the structure of a serious tasting sheet without turning a herf, lounge night, or solo review into paperwork.",
     direction:
       "Its direction centers on GDAT — the Group Draws Approach to Tasting — with cold-draw capture, construction and burn reads, flavor across the first, second, and final thirds, optional blind mode, guess-the-cigar fields, live aggregate dashboards, and polished notes that can flow back to The Registry.",
     promise:
@@ -342,9 +341,8 @@ export const products: Record<ProductKey, Product> = {
     eyebrow: "Alliance intelligence",
     audience:
       "Last War: Survival players and alliance leaders comparing manually entered Power, Tech, Production, Drone, and Overlord stats across alliance, server, and global scopes.",
-    status: "Beta",
     appUrl: "https://www.lws-powerup.com",
-    betaCtaLabel: "Start Power Up",
+    appCtaLabel: "Start Power Up",
     contactCtaLabel: "Talk Game Tools",
     detailCtaLabel: "See Companion",
     logoSrc: "/products/lws-powerup-logo.png",
@@ -355,7 +353,7 @@ export const products: Record<ProductKey, Product> = {
     description:
       "An independent companion for Last War: Survival that helps players compare Power, Tech, Production, Drone, and Overlord stats, run 1:1 scouting, and track growth without game-login access or automated scraping.",
     overview:
-      "LW:S - Power Up is in beta for alliances that want a cleaner way to see where members are ahead or behind without rebuilding the same spreadsheet every week.",
+      "LW:S - Power Up helps alliances see where members are ahead or behind without rebuilding the same spreadsheet every week.",
     direction:
       "Its direction centers on manually entered snapshots, alliance/server/global visibility, reciprocal share-to-see privacy, 1:1 matchup analysis, growth history, and carefully decomposed Power, Tech, Production, Drone, and Overlord models.",
     promise:
@@ -446,10 +444,10 @@ export const registryDetailSections = [
   {
     title: "Trusted agents should help with upkeep, not generic prompts.",
     body:
-      "The agent-access roadmap focuses on workflows that Registry can do better than a general assistant because it owns the private record: search saved items, find data gaps, prepare drafts, propose storage moves, assemble reports, and prep tastings while keeping confirmation in the user's hands.",
+      "The Registry offers scoped agent access to collection records, storage, reports, and tasting history. Agents can prepare proposals for cleanup, item updates, storage moves, and tastings; users review previews and approve meaningful changes before they are applied.",
     bullets: [
-      "Read-only contracts first for saved items, storage maps, reports, put-away queues, and tasting history",
-      "Draft-first actions for import cleanup, item updates, storage moves, make-space plans, lifecycle events, and tasting drafts",
+      "Scoped reads for saved items, storage maps, reports, put-away queues, and tasting history",
+      "Draft proposals for import cleanup, item updates, storage moves, lifecycle events, and tasting plans",
       "Explicit confirmation before applying inventory, storage, account, billing, or lifecycle changes",
       "Audit trails, stable resource links, schema versions, and retry-safe behavior before broader agent tooling",
     ],
@@ -529,7 +527,7 @@ export const imopen2DetailSections = [
 export const imopen2Pricing = {
   title: "Start free. Support the product when it becomes part of how you make plans.",
   body:
-    "The core app is free to start. Supporter is $2/month through August 2026, then $3/month, with annual options at $24 and $30. Organizer is $7/month or $70/year for people coordinating larger circles and more activity.",
+    "The core app is free to start. Supporter is $3/month or $30/year. Organizer is $7/month or $70/year for people coordinating larger circles and more activity.",
   tiers: [
     {
       name: "Free",
@@ -543,7 +541,7 @@ export const imopen2Pricing = {
     },
     {
       name: "Supporter",
-      price: "$2/month now, then $3/month",
+      price: "$3/month or $30/year",
       bullets: [
         "Saved Pulse templates",
         "Richer planning controls",

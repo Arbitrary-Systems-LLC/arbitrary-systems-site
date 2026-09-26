@@ -447,6 +447,10 @@ ul.detail-list li::marker {
 }
 
 .product-card .button-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  justify-items: start;
   margin-top: auto;
   padding-top: 28px;
 }
@@ -537,13 +541,6 @@ ul.detail-list li::marker {
   color: #ead7b4;
 }
 
-.product-card-register .status-pill,
-.page-stack-register .status-pill {
-  border-color: rgba(217, 198, 160, 0.28);
-  color: #ead7b4;
-  background: rgba(73, 52, 29, 0.34);
-}
-
 .product-card-register .button.primary,
 .page-stack-register .button.primary {
   background: linear-gradient(135deg, rgba(181, 134, 87, 0.38), rgba(112, 79, 43, 0.24));
@@ -564,13 +561,6 @@ ul.detail-list li::marker {
 
 .product-card-pranalogic .product-eyebrow {
   color: #bab1ff;
-}
-
-.product-card-pranalogic .status-pill,
-.page-stack-pranalogic .status-pill {
-  border-color: rgba(124, 111, 255, 0.3);
-  color: #cdc7ff;
-  background: rgba(50, 37, 103, 0.34);
 }
 
 .product-card-pranalogic .button.primary,
@@ -595,13 +585,6 @@ ul.detail-list li::marker {
   color: #9ffcff;
 }
 
-.product-card-imopen2 .status-pill,
-.page-stack-imopen2 .status-pill {
-  border-color: rgba(0, 245, 255, 0.3);
-  color: #9ffcff;
-  background: rgba(0, 43, 54, 0.44);
-}
-
 .product-card-imopen2 .button.primary,
 .page-stack-imopen2 .button.primary {
   background: linear-gradient(135deg, rgba(0, 232, 252, 0.28), rgba(0, 124, 137, 0.2));
@@ -622,13 +605,6 @@ ul.detail-list li::marker {
 
 .product-card-group-pours .product-eyebrow {
   color: #f0a7b2;
-}
-
-.product-card-group-pours .status-pill,
-.page-stack-group-pours .status-pill {
-  border-color: rgba(240, 143, 157, 0.28);
-  color: #ffd6dc;
-  background: rgba(72, 22, 35, 0.4);
 }
 
 .product-card-group-pours .button.primary,
@@ -653,13 +629,6 @@ ul.detail-list li::marker {
   color: #f4d29a;
 }
 
-.product-card-group-draws .status-pill,
-.page-stack-group-draws .status-pill {
-  border-color: rgba(217, 168, 103, 0.3);
-  color: #f4d29a;
-  background: rgba(70, 46, 23, 0.42);
-}
-
 .product-card-group-draws .button.primary,
 .page-stack-group-draws .button.primary {
   background: linear-gradient(135deg, rgba(217, 168, 103, 0.36), rgba(205, 138, 90, 0.26));
@@ -681,13 +650,6 @@ ul.detail-list li::marker {
 
 .product-card-lws-powerup .product-eyebrow {
   color: #fbbf24;
-}
-
-.product-card-lws-powerup .status-pill,
-.page-stack-lws-powerup .status-pill {
-  border-color: rgba(245, 158, 11, 0.32);
-  color: #fde68a;
-  background: rgba(92, 58, 7, 0.36);
 }
 
 .product-card-lws-powerup .button.primary,
@@ -787,11 +749,6 @@ ul.detail-list li::marker {
   gap: 24px;
   width: fit-content;
   max-width: 100%;
-}
-
-.product-action-meta {
-  display: flex;
-  align-items: center;
 }
 
 .detail-feature-panel,

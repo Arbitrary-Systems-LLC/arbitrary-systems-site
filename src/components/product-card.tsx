@@ -15,7 +15,6 @@ export function ProductCard({ product, headingLevel = "h3" }: ProductCardProps) 
     <article className={`product-card product-card-${product.slug}`}>
       <ProductLogo product={product} />
       <div className="product-card-top">
-        <span className="status-pill">{product.status}</span>
         <span className="product-eyebrow">{product.eyebrow}</span>
       </div>
       <TitleTag>{product.name}</TitleTag>
@@ -24,7 +23,7 @@ export function ProductCard({ product, headingLevel = "h3" }: ProductCardProps) 
       <p className="product-audience">{product.audience}</p>
       <div className="button-row">
         <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
-          {product.betaCtaLabel}
+          {product.appCtaLabel}
         </a>
         <Link href={`/products/${product.slug}`} className="button">
           {product.detailCtaLabel ?? "Learn More"}

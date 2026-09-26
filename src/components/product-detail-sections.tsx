@@ -45,13 +45,16 @@ export function ProductDetailSections({ product, pageStackClassName, children }:
         {children}
 
         <div className="panel product-action-panel">
-          <div className="product-action-meta">
-            <span className="status-pill">{product.status}</span>
-          </div>
+          {product.releaseNote && <p>{product.releaseNote}</p>}
           <div className="button-row">
             <a href={product.appUrl} className="button primary" target="_blank" rel="noreferrer">
-              {product.betaCtaLabel}
+              {product.appCtaLabel}
             </a>
+            {product.appStoreUrl && (
+              <a href={product.appStoreUrl} className="button" target="_blank" rel="noreferrer">
+                View on the App Store
+              </a>
+            )}
             <Link href="/contact" className="button">
               {product.contactCtaLabel}
             </Link>

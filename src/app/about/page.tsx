@@ -35,7 +35,7 @@ export default function AboutPage() {
                 The work is guided by a preference for strong operational models, restrained design, and practical utility. Rather than chasing novelty for its own sake, Arbitrary Systems approaches product development as a long-term exercise in clarity, reliability, and fit.
               </p>
               <p>
-                Current product work includes The Registry, a collector-first system for wine, spirits, beer, and cigars, PranaLogic, a studio operating system for yoga and boutique fitness businesses, Group Pours, a collaborative wine tasting app built around GPAT, Group Draws, a collaborative cigar tasting app built around GDAT, I&apos;m open 2, a private pulse-based planning app for small real-world plans, and LW:S - Power Up, an alliance intelligence tool for Last War: Survival players.
+                The portfolio includes The Registry for wine, beer, spirits, and cigar collections; PranaLogic for studios and trainers; Group Pours for shared wine, beer, and spirits tastings; Group Draws for cigar tastings; I&apos;m open 2 for private social plans; and LW:S - Power Up for Last War: Survival alliance comparisons. Group Pours is the first of these apps on the Apple App Store.
               </p>
             </article>
             <article className="panel">

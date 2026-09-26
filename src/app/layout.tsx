@@ -22,6 +22,8 @@ export const metadata: Metadata = {
     "studio management software",
     "yoga studio software",
     "wine tasting app",
+    "beer tasting app",
+    "spirits tasting app",
     "cigar tasting app",
     "collaborative tasting software",
     "GPAT tasting app",
