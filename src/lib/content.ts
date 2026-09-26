@@ -385,12 +385,15 @@ export const products: Record<ProductKey, Product> = {
   },
 };
 
-export const featuredProducts = [
+export const collectorProducts = [
   products.register,
-  products.pranalogic,
-  products.imopen2,
   products.groupPours,
   products.groupDraws,
+];
+
+export const otherProducts = [
+  products.pranalogic,
+  products.imopen2,
   products.lwsPowerup,
 ];
 

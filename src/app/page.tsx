@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { capabilities, company, featuredProducts, principles, products } from "@/lib/content";
+import { capabilities, collectorProducts, company, otherProducts, principles, products } from "@/lib/content";
 import { ProductCard } from "@/components/product-card";
 import { createMetadata } from "@/lib/metadata";
 
@@ -72,8 +72,8 @@ export default function HomePage() {
             <p>{products.groupPours.releaseNote} <a href={products.groupPours.appStoreUrl} target="_blank" rel="noreferrer">View Group Pours on the App Store</a>.</p>
           </div>
           <div className="signal-card">
-            <span className="signal-label">Current scope</span>
-            <p>Live app family: The Registry, PranaLogic, I&apos;m open 2, Group Pours, Group Draws, and LW:S - Power Up.</p>
+            <span className="signal-label">One Collector membership</span>
+            <p>Subscribe once to unlock paid features in The Registry, Group Pours, and Group Draws. The same account works across all three.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">Operating preference</span>
@@ -111,10 +111,26 @@ export default function HomePage() {
               Each product grows from an active codebase and a concrete domain model. The glimpses below show the work they hold: collector records, studio operations, wine, beer, spirits and cigar tasting sessions, private planning, and alliance comparison data.
             </p>
           </div>
-          <div className="product-grid">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.slug} product={product} />
-            ))}
+          <div className="portfolio-group">
+            <div className="membership-intro">
+              <span className="eyebrow">The collection and tasting family</span>
+              <h3>One Collector membership. Three connected apps.</h3>
+              <p>The Registry keeps the collection; Group Pours handles wine, beer, and spirits tastings; Group Draws handles cigars. Subscribe once to unlock paid features across all three, using the same account. Each app is free to start.</p>
+              <Link href="/products/the-registry#collector" className="inline-link">See Collector pricing</Link>
+            </div>
+            <div className="product-grid">
+              {collectorProducts.map((product) => (
+                <ProductCard key={product.slug} product={product} />
+              ))}
+            </div>
+          </div>
+          <div className="portfolio-group">
+            <div className="portfolio-group-label">More from Arbitrary Systems</div>
+            <div className="product-grid">
+              {otherProducts.map((product) => (
+                <ProductCard key={product.slug} product={product} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

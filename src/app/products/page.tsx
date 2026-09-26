@@ -1,11 +1,12 @@
-import { featuredProducts, products } from "@/lib/content";
+import Link from "next/link";
+import { collectorProducts, otherProducts, products } from "@/lib/content";
 import { ProductCard } from "@/components/product-card";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Products",
   description:
-    "See the current Arbitrary Systems product portfolio, including The Registry, PranaLogic, I'm open 2, Group Pours, Group Draws, and LW:S - Power Up.",
+    "Explore The Registry, Group Pours, and Group Draws with one Collector membership, plus PranaLogic, I'm open 2, and LW:S - Power Up.",
   path: "/products",
 });
 
@@ -23,10 +24,26 @@ export default function ProductsPage() {
       </section>
       <section className="page-content">
         <div className="container page-stack">
-          <div className="product-grid">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.slug} product={product} headingLevel="h2" />
-            ))}
+          <div className="portfolio-group">
+            <div className="membership-intro">
+              <span className="eyebrow">The collection and tasting family</span>
+              <h2>One Collector membership. Three connected apps.</h2>
+              <p>The Registry keeps the collection; Group Pours handles wine, beer, and spirits tastings; Group Draws handles cigars. Subscribe once to unlock paid features across all three, using the same account. Each app is free to start.</p>
+              <Link href="/products/the-registry#collector" className="inline-link">See Collector pricing</Link>
+            </div>
+            <div className="product-grid">
+              {collectorProducts.map((product) => (
+                <ProductCard key={product.slug} product={product} headingLevel="h3" />
+              ))}
+            </div>
+          </div>
+          <div className="portfolio-group">
+            <h2 className="portfolio-group-label">More from Arbitrary Systems</h2>
+            <div className="product-grid">
+              {otherProducts.map((product) => (
+                <ProductCard key={product.slug} product={product} headingLevel="h3" />
+              ))}
+            </div>
           </div>
         </div>
       </section>
