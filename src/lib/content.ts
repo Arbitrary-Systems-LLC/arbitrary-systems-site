@@ -120,7 +120,7 @@ export const products: Record<ProductKey, Product> = {
     overview:
       "The Registry gives collectors one trustworthy place for what they own, where it lives, what it cost, what they have consumed, and what deserves attention next.",
     direction:
-      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, consumed-history capture, Distinctions, Standouts, a shared catalog, and scoped agent access with human-reviewed changes.",
+      "Its direction is shaped by real collector workflows: bottle-level import, location and bin tracking, consumed-history capture, Distinctions, Standouts, Tasting Composer, and scoped agent access with human-reviewed changes.",
     promise:
       "The goal is to make a serious collection easier to maintain, easier to search, easier to taste from, and more meaningful as history accumulates.",
     bullets: [
@@ -128,6 +128,7 @@ export const products: Record<ProductKey, Product> = {
       "CellarTracker and CSV import, including consumed-history files",
       "location, bin, quantity, bottle state, purchase history, and current value",
       "Group Pours and Group Draws connections for hosted tastings, rankings, polished notes, and saved tasting history",
+      "Tasting Composer for flights built from owned bottles, plus one included family co-owner on Collector",
       "Distinctions and Standouts that turn collection and tasting history into a living profile",
       "scoped agent access for reading records and preparing human-reviewed collection updates",
       "collector-grade privacy boundaries between shared catalog data and personal collection records",
@@ -170,7 +171,7 @@ export const products: Record<ProductKey, Product> = {
     overview:
       "PranaLogic gives studios and trainers one place for group classes, private sessions, memberships, customers, staff, rooms, and locations.",
     direction:
-      "Its operational backbone covers recurring schedules, class and private-session booking, cancellations, waitlists, waivers, memberships, payments, and owner repair paths when something goes wrong at the desk.",
+      "Its operational backbone covers recurring schedules, class and private-session booking, cancellations, waitlists, waivers, memberships, payments, owner analytics, and repair paths when something goes wrong at the desk.",
     promise:
       "The goal is software that helps a studio run cleanly and confidently, fixes mistakes without drama when they happen, and meets customers where they increasingly are — including in their AI assistant.",
     bullets: [
@@ -180,6 +181,8 @@ export const products: Record<ProductKey, Product> = {
       "owner repair tools — cancel a booking on behalf of a customer, void a wrong purchase, adjust credits, record past attendance for a class that was already taught — every action captured in a per-customer audit timeline",
       "first studio platform with a working Model Context Protocol integration: a customer can mint a scoped key in one click and let Claude, ChatGPT, or any MCP-compatible assistant search classes, check credits, and book or cancel on their behalf, with a hard payment boundary (no headless purchases)",
       "booking, cancellation, waitlist, waiver, and intake flows designed around how studios actually operate",
+      "private sessions with pay-upfront or pay-after-session options, plus configurable late-cancel and no-show fees",
+      "owner analytics for revenue, customers, and teachers, with CSV export",
       "a calmer alternative to cluttered studio software without sacrificing operational seriousness",
     ],
     preview: {
@@ -251,7 +254,7 @@ export const products: Record<ProductKey, Product> = {
     appUrl: "https://www.grouppours.com",
     appCtaLabel: "Host a Tasting",
     appStoreUrl: "https://apps.apple.com/us/app/group-pours/id6806579662",
-    releaseNote: "Available for iPhone and iPad on the App Store. Android is awaiting Google Play approval.",
+    releaseNote: "Available for iPhone and iPad on the App Store.",
     contactCtaLabel: "Talk Tastings",
     logoSrc: "/products/group-pours-wordmark.png",
     logoAlt: "Group Pours wordmark",
@@ -263,14 +266,15 @@ export const products: Record<ProductKey, Product> = {
     overview:
       "Group Pours helps hosts run a wine, beer, or spirits tasting and gives each guest a clear path from first impression to saved note and group recap. Solo tasting is there when you want to keep a record on your own.",
     direction:
-      "Hosts can share a room code, keep a flight blind, and reveal bottles when the group is ready. Tasters can use a quick or detailed path, with guided wine prompts if they want help; photos, rankings, polished notes, and saved history make the tasting useful afterward.",
+      "Hosts can share a room code, keep a flight blind, and reveal bottles when the group is ready. Tasters can use Lite or Full notes, with guided wine prompts if they want help; photos, rankings, polished notes, saved history, and a private taste profile make the tasting useful afterward.",
     promise:
       "The goal is to make group tasting easier to host, easier to join, and more rewarding to revisit after the pours are over.",
     bullets: [
       "host-led wine, beer, and spirits flights with optional blind mode",
       "join-by-code or QR workflows that let tasters move straight into note capture",
-      "quick and detailed tasting paths, guided wine prompts, photos, and rankings",
+      "Lite and Full tasting paths, guided wine prompts, photos, and rankings",
       "solo notes, live group results, polished recaps, and saved tasting history",
+      "a private taste profile that summarizes patterns from saved wine notes",
       "a natural bridge between collaborative tasting and a deeper personal collection record in The Registry",
     ],
     preview: {
@@ -303,17 +307,18 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 350,
     logoStyle: "wordmark",
     description:
-      "A collaborative cigar tasting app built around GDAT, helping hosts run cigar flights while tasters join by code or QR, capture notes across the thirds, and share live group results.",
+      "A collaborative cigar tasting app with Quick Note, Follow the Cigar, and Full GDAT paths for solo or hosted flights, live results, and shared recaps.",
     overview:
       "Group Draws gives cigar tasting hosts the structure of a serious tasting sheet without turning a herf, lounge night, or solo review into paperwork.",
     direction:
-      "Its direction centers on GDAT — the Group Draws Approach to Tasting — with cold-draw capture, construction and burn reads, flavor across the first, second, and final thirds, optional blind mode, guess-the-cigar fields, live aggregate dashboards, and polished notes that can flow back to The Registry.",
+      "Its direction centers on three note depths — Quick Note, Follow the Cigar, and Full GDAT — with cold-draw capture, construction and burn reads, flavor across the thirds, optional blind mode, live aggregate dashboards, and polished notes that can flow back to The Registry.",
     promise:
       "The goal is to make cigar tasting easier to host, easier to join, and easier to remember, while keeping Group Draws aligned with Group Pours and The Registry as one broader tasting ecosystem.",
     bullets: [
       "host-led cigar flights with one or more cigars, optional blind mode, and live session control",
-      "join-by-code and QR workflows that let tasters move straight into the GDAT sheet from a phone",
+      "join-by-code and QR workflows that let tasters move straight into their chosen note path from a phone",
       "structured cigar notes across cold draw, performance, thirds, retrohale, finish, and final impressions",
+      "Quick Note, Follow the Cigar, or Full GDAT depending on the cigar and the room",
       "live flavor clouds, construction reads, rankings, and shareable group recaps",
       "solo tasting mode for private cigar notes without a share code",
       "AI-polished tasting notes for individual tasters and group recaps",
@@ -329,7 +334,7 @@ export const products: Record<ProductKey, Product> = {
       ],
       highlights: [
         "Hosts add cigars, share a code or QR, and watch notes arrive as tasters work through the flight.",
-        "GDAT captures cold draw, construction, burn, flavor across thirds, retrohale, and final impressions.",
+        "Choose Quick Note, Follow the Cigar, or Full GDAT; the full sheet captures cold draw, construction, burn, flavor across thirds, and final impressions.",
         "Blind mode, rankings, polished notes, and Registry handoffs turn a cigar night into a lasting record.",
       ],
       footer: "GDAT • cigar flights • blind mode • Registry notes",
@@ -340,7 +345,7 @@ export const products: Record<ProductKey, Product> = {
     slug: "lws-powerup",
     eyebrow: "Alliance intelligence",
     audience:
-      "Last War: Survival players and alliance leaders comparing manually entered Power, Tech, Production, Drone, and Overlord stats across alliance, server, and global scopes.",
+      "Last War: Survival players and alliance leaders comparing manually entered Power, Tech, Production, Drone, Overlord, Hero, and Squad stats across alliance, server, and global scopes.",
     appUrl: "https://www.lws-powerup.com",
     appCtaLabel: "Start Power Up",
     contactCtaLabel: "Talk Game Tools",
@@ -351,15 +356,16 @@ export const products: Record<ProductKey, Product> = {
     logoHeight: 1024,
     logoStyle: "mark",
     description:
-      "An independent companion for Last War: Survival that helps players compare Power, Tech, Production, Drone, and Overlord stats, run 1:1 scouting, and track growth without game-login access or automated scraping.",
+      "An independent Last War: Survival companion for comparing Power, Tech, Production, Drone, Overlord, Heroes, and Squads, with 1:1 scouting and growth tracking.",
     overview:
       "LW:S - Power Up helps alliances see where members are ahead or behind without rebuilding the same spreadsheet every week.",
     direction:
-      "Its direction centers on manually entered snapshots, alliance/server/global visibility, reciprocal share-to-see privacy, 1:1 matchup analysis, growth history, and carefully decomposed Power, Tech, Production, Drone, and Overlord models.",
+      "Its direction centers on manually entered snapshots, alliance/server/global visibility, reciprocal share-to-see privacy, 1:1 matchup analysis, growth history, and detailed Power, Tech, Production, Drone, Overlord, Hero, and Squad models.",
     promise:
       "The goal is to help players make smarter upgrade decisions, scout matchups more clearly, and give alliance leaders a shared picture of growth without asking anyone for game credentials.",
     bullets: [
       "manual stat snapshots for Power, Tech, Production, Drone, and Overlord screens",
+      "hero rosters with levels, stars, gear, and skills, plus squad power and lineups",
       "side-by-side comparison grids that show exactly where a player is ahead, behind, or even",
       "1:1 matchup analysis for scouting rivals or understanding alliance gaps",
       "growth tracking so players can see whether recent upgrades are moving the numbers that matter",
@@ -369,18 +375,18 @@ export const products: Record<ProductKey, Product> = {
     ],
     preview: {
       eyebrow: "Alliance scout",
-      title: "Power, tech, production, Drone, and Overlord gaps in one view.",
+      title: "Power, tech, production, Drone, Overlord, Hero, and Squad gaps in one view.",
       stats: [
         { label: "Scope", value: "Alliance" },
         { label: "Compare", value: "1:1" },
         { label: "Privacy", value: "share-to-see" },
       ],
       highlights: [
-        "Players enter their numbers by hand, then compare against their alliance, server, or opted-in global pool.",
+        "Players enter stats and hero and squad details by hand, then compare against their alliance, server, or opted-in global pool.",
         "Comparison views make strong and weak spots visible without giving the app any game-account access.",
         "1:1 scouting and growth history turn routine stat checks into a clearer upgrade plan.",
       ],
-      footer: "Power • Tech • Production • Drone • Overlord",
+      footer: "Power • Tech • Production • Drone • Overlord • Heroes • Squads",
     },
   },
 };
@@ -429,7 +435,7 @@ export const registryDetailSections = [
       "Distinctions across wine, beer, spirits, cigars, collection depth, and experience history",
       "Clickable progress details explaining how each Distinction is computed",
       "Standouts for casual favorites without rigid scores",
-      "Future shared-registry support for households and couples with different favorites",
+      "One included family co-owner on Collector",
     ],
   },
   {
@@ -482,6 +488,8 @@ export const registryPricing = {
         "Consumed-history import",
         "Add from photo",
         "Hosted Group Pours and Group Draws tastings, rankings, and saved tasting history",
+        "Tasting Composer for solo or hosted flights",
+        "One included family co-owner",
         "Full Distinctions catalog and progress detail",
         "Advanced import cleanup and dedupe tools",
       ],

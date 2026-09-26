@@ -16,7 +16,7 @@ const signals = [
   "Studio operations software for yoga and boutique fitness, with owner repair tools and a working AI-assistant integration",
   "Wine, beer, and spirits tastings in Group Pours; cigar tastings in Group Draws",
   "Private, circle-based pulses and syncs for small real-world plans",
-  "Alliance intelligence for Last War: Survival players comparing stats, growth, and matchups",
+  "Alliance intelligence for Last War: Survival players comparing stats, heroes, squads, growth, and matchups",
 ];
 
 export default function HomePage() {

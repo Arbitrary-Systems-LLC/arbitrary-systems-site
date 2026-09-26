@@ -26,9 +26,10 @@ export default function GroupDrawsPage() {
         <div className="panel detail-feature-panel">
           <h2 className="section-heading">A cigar sibling to Group Pours</h2>
           <p>
-            Group Draws follows the same tasting-system philosophy as Group Pours, but the workflow is cigar-specific:
-            cold draw, construction, burn, flavor across the thirds, retrohale, final impressions, and optional
-            guess-the-cigar play for blind flights.
+            Group Draws follows the same tasting-system philosophy as Group Pours, but the workflow is cigar-specific.
+            Choose Quick Note for an impression, Follow the Cigar as it develops, or Full GDAT for cold draw,
+            construction, burn, flavor across the thirds, retrohale, and final impressions. Blind flights can add
+            guess-the-cigar play.
           </p>
           <ul className="detail-list">
             <li>Hosts can run a room from a phone with share codes or QR joins</li>
