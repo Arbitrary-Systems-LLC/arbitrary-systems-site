@@ -254,7 +254,7 @@ export const products: Record<ProductKey, Product> = {
     eyebrow: "Collaborative tasting",
     audience: "Hosts and tasters sharing wine, beer, or spirits flights, plus people keeping their own tasting notes.",
     appUrl: "https://www.grouppours.com",
-    appCtaLabel: "Host a Tasting",
+    appCtaLabel: "Explore Group Pours",
     appStoreUrl: "https://apps.apple.com/us/app/group-pours/id6806579662",
     googlePlayUrl: "https://play.google.com/store/apps/details?id=com.arbitrarysystems.grouppours",
     releaseNote: "Available for iPhone and iPad on the App Store and for Android on Google Play.",
