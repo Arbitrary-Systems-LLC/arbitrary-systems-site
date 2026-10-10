@@ -79,6 +79,7 @@ export type Product = {
   appUrl: string;
   appCtaLabel: string;
   appStoreUrl?: string;
+  googlePlayUrl?: string;
   releaseNote?: string;
   contactCtaLabel: string;
   detailCtaLabel?: string;
@@ -255,7 +256,8 @@ export const products: Record<ProductKey, Product> = {
     appUrl: "https://www.grouppours.com",
     appCtaLabel: "Host a Tasting",
     appStoreUrl: "https://apps.apple.com/us/app/group-pours/id6806579662",
-    releaseNote: "Available for iPhone and iPad on the App Store.",
+    googlePlayUrl: "https://play.google.com/store/apps/details?id=com.arbitrarysystems.grouppours",
+    releaseNote: "Available for iPhone and iPad on the App Store and for Android on Google Play.",
     contactCtaLabel: "Talk Tastings",
     logoSrc: "/products/group-pours-wordmark.png",
     logoAlt: "Group Pours wordmark",

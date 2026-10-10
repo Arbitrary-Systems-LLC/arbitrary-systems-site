@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   description:
-    "Arbitrary Systems builds software for collections, studios, wine, beer and spirits tastings, cigar tastings, private plans, and game communities. Group Pours is on the App Store.",
+    "Arbitrary Systems builds software for collections, studios, wine, beer and spirits tastings, cigar tastings, private plans, and game communities. Group Pours is on the App Store and Google Play.",
   path: "/",
 });
 
@@ -68,8 +68,8 @@ export default function HomePage() {
       <section className="signal-band">
         <div className="container signal-grid">
           <div className="signal-card">
-            <span className="signal-label">Now on the App Store</span>
-            <p>{products.groupPours.releaseNote} <a href={products.groupPours.appStoreUrl} target="_blank" rel="noreferrer">View Group Pours on the App Store</a>.</p>
+            <span className="signal-label">Now on the App Store and Google Play</span>
+            <p>{products.groupPours.releaseNote} <a href={products.groupPours.appStoreUrl} target="_blank" rel="noreferrer">View on the App Store</a> or <a href={products.groupPours.googlePlayUrl} target="_blank" rel="noreferrer">get it on Google Play</a>.</p>
           </div>
           <div className="signal-card">
             <span className="signal-label">One Collector membership</span>

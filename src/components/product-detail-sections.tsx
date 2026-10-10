@@ -55,6 +55,11 @@ export function ProductDetailSections({ product, pageStackClassName, children }:
                 View on the App Store
               </a>
             )}
+            {product.googlePlayUrl && (
+              <a href={product.googlePlayUrl} className="button" target="_blank" rel="noreferrer">
+                Get it on Google Play
+              </a>
+            )}
             <Link href="/contact" className="button">
               {product.contactCtaLabel}
             </Link>

@@ -35,7 +35,7 @@ export default function AboutPage() {
                 The work is guided by a preference for strong operational models, restrained design, and practical utility. Rather than chasing novelty for its own sake, Arbitrary Systems approaches product development as a long-term exercise in clarity, reliability, and fit.
               </p>
               <p>
-                The portfolio includes The Registry for wine, beer, spirits, and cigar collections; PranaLogic for studios and trainers; Group Pours for shared wine, beer, and spirits tastings; Group Draws for cigar tastings; I&apos;m open 2 for private social plans; and LW:S - Power Up for Last War: Survival alliance comparisons. Group Pours is the first of these apps on the Apple App Store.
+                The portfolio includes The Registry for wine, beer, spirits, and cigar collections; PranaLogic for studios and trainers; Group Pours for shared wine, beer, and spirits tastings; Group Draws for cigar tastings; I&apos;m open 2 for private social plans; and LW:S - Power Up for Last War: Survival alliance comparisons. Group Pours is available on the Apple App Store and Google Play.
               </p>
             </article>
             <article className="panel">

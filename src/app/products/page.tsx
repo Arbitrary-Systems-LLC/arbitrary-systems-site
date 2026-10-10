@@ -18,7 +18,7 @@ export default function ProductsPage() {
           <div className="eyebrow">Product portfolio</div>
           <h1>A family of apps, each built around a real pattern of use.</h1>
           <p>
-            Arbitrary Systems builds a focused portfolio of apps for private collections, studio operations, social planning, wine, beer, spirits, and cigar tastings, and game communities. {products.groupPours.releaseNote} <a href={products.groupPours.appStoreUrl}>View Group Pours on the App Store</a>.
+            Arbitrary Systems builds a focused portfolio of apps for private collections, studio operations, social planning, wine, beer, spirits, and cigar tastings, and game communities. {products.groupPours.releaseNote} <a href={products.groupPours.appStoreUrl}>View on the App Store</a> or <a href={products.groupPours.googlePlayUrl}>get it on Google Play</a>.
           </p>
         </div>
       </section>
